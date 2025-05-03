@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/calvin/esp/lab2/build/cmake_install.cmake",
+		"/Users/calvin/esp/lab2/build/esp-idf/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

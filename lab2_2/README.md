@@ -1,0 +1,1 @@
+This project polls the SHTC3 temperature and humidity sensor every 2 seconds for temperature and humidity readings, then prints them to the console. The temperature is given in Celsius and Farenheit, and the humidity is a relative value given as a percentage. If the data is found to be corrupt by a failed CRC check, the sensor is polled again.

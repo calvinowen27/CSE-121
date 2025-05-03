@@ -1,0 +1,289 @@
+Command: /Users/calvin/.espressif/python_env/idf5.5_py3.13_env/bin/python /Users/calvin/esp/esp-idf/tools/idf_monitor.py -p /dev/cu.usbmodem101 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --revision 3 --decode-panic backtrace /Users/calvin/esp/lab4_1/build/lab4_1.elf /Users/calvin/esp/lab4_1/build/bootloader/bootloader.elf -m '/Users/calvin/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/Users/calvin/esp/esp-idf/tools/idf.py'
+ge header.
+[0;32mI (247) sleep_gpio: Configure to isolate all GPIO pins inESP-ROM:esp32c3-api1-20210207[0m
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xf (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4004c0d8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x15b0
+load:0x403cbf10,len:0xc34
+load:0x403ce710,len:0x2fe8
+entry 0x403cbf1a
+[0;32mI (24) boot: ESP-IDF v5.5-dev-2916-g1c468f6825 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time May  2 2025 13:41:44[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (26) boot: efuse block revision: v1.3[0m
+[0;32mI (30) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (34) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (45) boot: Partition Table:[0m
+[0;32mI (48) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (54) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (61) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (67) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (74) boot: End of partition table[0m
+[0;32mI (77) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0a4c0h ( 42176) map[0m
+[0;32mI (91) esp_image: segment 1: paddr=0001a4e8 vaddr=3fc8c000 size=012b0h (  4784) load[0m
+[0;32mI (93) esp_image: segment 2: paddr=0001b7a0 vaddr=40380000 size=04878h ( 18552) load[0m
+[0;32mI (103) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1b768h (112488) map[0m
+[0;32mI (125) esp_image: segment 4: paddr=0003b790 vaddr=40384878 size=07710h ( 30480) load[0m
+[0;32mI (131) esp_image: segment 5: paddr=00042ea8 vaddr=50000000 size=0001ch (    28) load[0m
+[0;32mI (135) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (135) boot: Disabling RNG early entropy source...[0m
+[0;32mI (150) cpu_start: Unicore app[0m
+[0;32mI (159) cpu_start: Pro cpu start user code[0m
+[0;32mI (159) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (159) app_init: Application information:[0m
+[0;32mI (159) app_init: Project name:     lab4_1[0m
+[0;32mI (163) app_init: App version:      1[0m
+[0;32mI (166) app_init: Compile time:     May  2 2025 13:41:38[0m
+[0;32mI (171) app_init: ELF file SHA256:  ecaf8c066...[0m
+[0;32mI (175) app_init: ESP-IDF:          v5.5-dev-2916-g1c468f6825[0m
+[0;32mI (181) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (185) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (189) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (192) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (199) heap_init: At 3FC8E2E0 len 00031D20 (199 KiB): RAM[0m
+[0;32mI (204) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (210) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (216) heap_init: At 5000001C len 00001FCC (7 KiB): RTCRAM[0m
+[0;32mI (222) spi_flash: detected chip: generic[0m
+[0;32mI (225) spi_flash: flash io: dio[0m
+[0;33mW (228) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (240) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (246) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (253) main_task: Started on CPU0[0m
+[0;32mI (253) main_task: Calling app_main()[0m
+[0;32mI (253) icm42670 test: I2C bus initialized successfully[0m
+[0;32mI (263) icm42670 test: ICM42670 sensor created[0m
+[0;32mI (273) icm42670 test: ICM42670 sensor initialized successfully[0m
+[0;32mI (273) icm42670 test: Powering ICM42670 accelerometer on[0m
+[0;32mI (273) icm42670 test: Accelerometer ready[0m
+[0;32mI (273) icm42670 test: Powering ICM42670 gyroscope on[0m
+[0;32mI (283) icm42670 test: Gyroscope ready[0m
+[0;32mI (383) icm42670 test: ANGLE :-: ROLL= -0.552 PITCH= -0.164[0m
+[0;32mI (483) icm42670 test: ANGLE :-: ROLL= -0.527 PITCH= -0.116[0m
+[0;32mI (583) icm42670 test: ANGLE :-: ROLL= -0.496 PITCH= -0.104[0m
+[0;32mI (683) icm42670 test: ANGLE :-: ROLL= -0.465 PITCH= -0.076[0m
+[0;32mI (783) icm42670 test: ANGLE :-: ROLL= -0.434 PITCH= -0.054[0m
+[0;32mI (883) icm42670 test: ANGLE :-: ROLL= -0.410 PITCH= -0.031[0m
+[0;32mI (983) icm42670 test: ANGLE :-: ROLL= -0.381 PITCH= 0.010[0m
+[0;32mI (1083) icm42670 test: ANGLE :-: ROLL= -0.352 PITCH= 0.043[0m
+[0;32mI (1183) icm42670 test: ANGLE :-: ROLL= -0.328 PITCH= 0.102[0m
+[0;32mI (1283) icm42670 test: ANGLE :-: ROLL= -0.311 PITCH= 0.214[0m
+[0;32mI (1383) icm42670 test: ANGLE :-: ROLL= -0.282 PITCH= 0.438[0m
+[0;32mI (1483) icm42670 test: ANGLE :-: ROLL= -0.224 PITCH= 1.099[0m
+[0;32mI (1583) icm42670 test: ANGLE :-: ROLL= -0.040 PITCH= 2.965[0m
+[0;32mI (1683) icm42670 test: ANGLE :-: ROLL= 0.196 PITCH= 4.334[0m
+[0;32mI (1783) icm42670 test: ANGLE :-: ROLL= 0.314 PITCH= 6.067[0m
+[0;32mI (1883) icm42670 test: ANGLE :-: ROLL= 0.453 PITCH= 9.858[0m
+[0;32mI (1983) icm42670 test: ANGLE :-: ROLL= 0.094 PITCH= 12.019[0m
+[0;32mI (2083) icm42670 test: ANGLE :-: ROLL= -0.083 PITCH= 15.618[0m
+[0;32mI (2183) icm42670 test: ANGLE :-: ROLL= -0.138 PITCH= 18.633[0m
+[0;32mI (2283) icm42670 test: ANGLE :-: ROLL= -0.373 PITCH= 22.265[0m
+[0;32mI (2383) icm42670 test: ANGLE :-: ROLL= -0.773 PITCH= 22.420[0m
+[0;32mI (2483) icm42670 test: ANGLE :-: ROLL= -0.845 PITCH= 22.342[0m
+[0;32mI (2583) icm42670 test: ANGLE :-: ROLL= -0.850 PITCH= 21.913[0m
+[0;32mI (2683) icm42670 test: ANGLE :-: ROLL= -0.841 PITCH= 21.357[0m
+[0;32mI (2783) icm42670 test: ANGLE :-: ROLL= -0.911 PITCH= 19.627[0m
+[0;32mI (2883) icm42670 test: ANGLE :-: ROLL= -1.075 PITCH= 5.192[0m
+[0;32mI (2983) icm42670 test: ANGLE :-: ROLL= -0.965 PITCH= -1.751[0m
+[0;32mI (3083) icm42670 test: ANGLE :-: ROLL= -1.120 PITCH= -3.992[0m
+[0;32mI (3183) icm42670 test: ANGLE :-: ROLL= -1.130 PITCH= -4.724[0m
+[0;32mI (3283) icm42670 test: ANGLE :-: ROLL= -1.094 PITCH= -4.875[0m
+[0;32mI (3383) icm42670 test: ANGLE :-: ROLL= -1.058 PITCH= -4.869[0m
+[0;32mI (3483) icm42670 test: ANGLE :-: ROLL= -1.033 PITCH= -4.827[0m
+[0;32mI (3583) icm42670 test: ANGLE :-: ROLL= -1.016 PITCH= -4.767[0m
+[0;32mI (3683) icm42670 test: ANGLE :-: ROLL= -0.986 PITCH= -4.715[0m
+[0;32mI (3783) icm42670 test: ANGLE :-: ROLL= -0.951 PITCH= -4.704[0m
+[0;32mI (3883) icm42670 test: ANGLE :-: ROLL= -0.861 PITCH= -5.025[0m
+[0;32mI (3983) icm42670 test: ANGLE :-: ROLL= -0.961 PITCH= -8.154[0m
+[0;32mI (4083) icm42670 test: ANGLE :-: ROLL= -1.007 PITCH= -18.332[0m
+[0;32mI (4183) icm42670 test: ANGLE :-: ROLL= -1.106 PITCH= -28.973[0m
+[0;32mI (4283) icm42670 test: ANGLE :-: ROLL= -1.256 PITCH= -37.624[0m
+[0;32mI (4383) icm42670 test: ANGLE :-: ROLL= -1.088 PITCH= -37.224[0m
+[0;32mI (4483) icm42670 test: ANGLE :-: ROLL= -0.888 PITCH= -36.034[0m
+[0;32mI (4583) icm42670 test: ANGLE :-: ROLL= -0.268 PITCH= -32.655[0m
+[0;32mI (4683) icm42670 test: ANGLE :-: ROLL= -0.977 PITCH= -10.505[0m
+[0;32mI (4783) icm42670 test: ANGLE :-: ROLL= -1.617 PITCH= 4.510[0m
+[0;32mI (4883) icm42670 test: ANGLE :-: ROLL= -1.590 PITCH= 4.627[0m
+[0;32mI (4983) icm42670 test: ANGLE :-: ROLL= -1.584 PITCH= 4.744[0m
+[0;32mI (5083) icm42670 test: ANGLE :-: ROLL= -1.580 PITCH= 4.990[0m
+[0;32mI (5183) icm42670 test: ANGLE :-: ROLL= -1.538 PITCH= 5.385[0m
+[0;32mI (5283) icm42670 test: ANGLE :-: ROLL= -1.509 PITCH= 5.337[0m
+[0;32mI (5383) icm42670 test: ANGLE :-: ROLL= -1.480 PITCH= 5.020[0m
+[0;32mI (5483) icm42670 test: ANGLE :-: ROLL= -1.440 PITCH= 4.908[0m
+[0;32mI (5583) icm42670 test: ANGLE :-: ROLL= -1.400 PITCH= 5.300[0m
+[0;32mI (5683) icm42670 test: ANGLE :-: ROLL= -1.358 PITCH= 11.274[0m
+[0;32mI (5783) icm42670 test: ANGLE :-: ROLL= -1.050 PITCH= 17.832[0m
+[0;32mI (5883) icm42670 test: ANGLE :-: ROLL= -1.154 PITCH= 21.973[0m
+[0;32mI (5983) icm42670 test: ANGLE :-: ROLL= -1.627 PITCH= 26.274[0m
+[0;32mI (6083) icm42670 test: ANGLE :-: ROLL= -1.538 PITCH= 25.374[0m
+[0;32mI (6183) icm42670 test: ANGLE :-: ROLL= -1.873 PITCH= 5.929[0m
+[0;32mI (6283) icm42670 test: ANGLE :-: ROLL= -1.857 PITCH= 4.196[0m
+[0;32mI (6383) icm42670 test: ANGLE :-: ROLL= -1.812 PITCH= 4.110[0m
+[0;32mI (6483) icm42670 test: ANGLE :-: ROLL= -1.781 PITCH= 4.182[0m
+[0;32mI (6583) icm42670 test: ANGLE :-: ROLL= -1.744 PITCH= 4.191[0m
+[0;32mI (6683) icm42670 test: ANGLE :-: ROLL= -1.443 PITCH= 7.807[0m
+[0;32mI (6783) icm42670 test: ANGLE :-: ROLL= -1.155 PITCH= 11.892[0m
+[0;32mI (6883) icm42670 test: ANGLE :-: ROLL= -0.601 PITCH= 22.378[0m
+[0;32mI (6983) icm42670 test: ANGLE :-: ROLL= -0.957 PITCH= 23.512[0m
+[0;32mI (7083) icm42670 test: ANGLE :-: ROLL= -1.740 PITCH= 2.514[0m
+[0;32mI (7183) icm42670 test: ANGLE :-: ROLL= -1.678 PITCH= 2.326[0m
+[0;32mI (7283) icm42670 test: ANGLE :-: ROLL= -1.641 PITCH= 2.403[0m
+[0;32mI (7383) icm42670 test: ANGLE :-: ROLL= -1.617 PITCH= 2.449[0m
+[0;32mI (7483) icm42670 test: ANGLE :-: ROLL= -1.586 PITCH= 2.497[0m
+[0;32mI (7583) icm42670 test: ANGLE :-: ROLL= -1.550 PITCH= 2.488[0m
+[0;32mI (7683) icm42670 test: ANGLE :-: ROLL= -1.523 PITCH= 2.520[0m
+[0;32mI (7783) icm42670 test: ANGLE :-: ROLL= -1.471 PITCH= 3.629[0m
+[0;32mI (7883) icm42670 test: ANGLE :-: ROLL= -1.437 PITCH= 2.916[0m
+[0;32mI (7983) icm42670 test: ANGLE :-: ROLL= 1.461 PITCH= 4.152[0m
+[0;32mI (8083) icm42670 test: ANGLE :-: ROLL= 8.632 PITCH= 1.861[0m
+[0;32mI (8183) icm42670 test: ANGLE :-: ROLL= 15.313 PITCH= -0.224[0m
+[0;32mI (8283) icm42670 test: ANGLE :-: ROLL= 19.521 PITCH= -0.560[0m
+[0;32mI (8383) icm42670 test: ANGLE :-: ROLL= 22.064 PITCH= -0.655[0m
+[0;32mI (8483) icm42670 test: ANGLE :-: ROLL= 23.026 PITCH= -1.133[0m
+[0;32mI (8583) icm42670 test: ANGLE :-: ROLL= 20.379 PITCH= -0.076[0m
+[0;32mI (8683) icm42670 test: ANGLE :-: ROLL= 15.920 PITCH= 1.991[0m
+[0;32mI (8783) icm42670 test: ANGLE :-: ROLL= 4.463 PITCH= 5.229[0m
+[0;32mI (8883) icm42670 test: ANGLE :-: ROLL= -2.231 PITCH= -6.853[0m
+[0;32mI (8983) icm42670 test: ANGLE :-: ROLL= -8.885 PITCH= -3.808[0m
+[0;32mI (9083) icm42670 test: ANGLE :-: ROLL= -11.802 PITCH= -4.724[0m
+[0;32mI (9183) icm42670 test: ANGLE :-: ROLL= -15.778 PITCH= -1.953[0m
+[0;32mI (9283) icm42670 test: ANGLE :-: ROLL= -19.733 PITCH= 0.155[0m
+[0;32mI (9383) icm42670 test: ANGLE :-: ROLL= -22.734 PITCH= 1.891[0m
+[0;32mI (9483) icm42670 test: ANGLE :-: ROLL= -24.639 PITCH= 2.511[0m
+[0;32mI (9583) icm42670 test: ANGLE :-: ROLL= -23.497 PITCH= 2.114[0m
+[0;32mI (9683) icm42670 test: ANGLE :-: ROLL= -17.449 PITCH= 0.456[0m
+[0;32mI (9783) icm42670 test: ANGLE :-: ROLL= -9.163 PITCH= -1.079[0m
+[0;32mI (9883) icm42670 test: ANGLE :-: ROLL= -8.781 PITCH= -0.340[0m
+[0;32mI (9983) icm42670 test: ANGLE :-: ROLL= -8.702 PITCH= -0.146[0m
+[0;32mI (10083) icm42670 test: ANGLE :-: ROLL= -8.603 PITCH= -0.053[0m
+[0;32mI (10183) icm42670 test: ANGLE :-: ROLL= -8.498 PITCH= 0.008[0m
+[0;32mI (10283) icm42670 test: ANGLE :-: ROLL= -8.401 PITCH= 0.031[0m
+[0;32mI (10383) icm42670 test: ANGLE :-: ROLL= -8.297 PITCH= 0.061[0m
+[0;32mI (10483) icm42670 test: ANGLE :-: ROLL= -8.189 PITCH= 0.084[0m
+[0;32mI (10583) icm42670 test: ANGLE :-: ROLL= -8.094 PITCH= 0.108[0m
+[0;32mI (10683) icm42670 test: ANGLE :-: ROLL= -8.000 PITCH= 0.142[0m
+[0;32mI (10783) icm42670 test: ANGLE :-: ROLL= -7.901 PITCH= 0.177[0m
+[0;32mI (10883) icm42670 test: ANGLE :-: ROLL= -7.802 PITCH= 0.199[0m
+[0;32mI (10983) icm42670 test: ANGLE :-: ROLL= -7.693 PITCH= 0.203[0m
+[0;32mI (11083) icm42670 test: ANGLE :-: ROLL= -7.591 PITCH= 0.225[0m
+[0;32mI (11183) icm42670 test: ANGLE :-: ROLL= -7.509 PITCH= 0.248[0m
+[0;32mI (11283) icm42670 test: ANGLE :-: ROLL= -7.408 PITCH= 0.276[0m
+[0;32mI (11383) icm42670 test: ANGLE :-: ROLL= -7.327 PITCH= 0.351[0m
+[0;32mI (11483) icm42670 test: ANGLE :-: ROLL= -7.241 PITCH= 0.404[0m
+[0;32mI (11583) icm42670 test: ANGLE :-: ROLL= -7.149 PITCH= 0.418[0m
+[0;32mI (11683) icm42670 test: ANGLE :-: ROLL= -7.060 PITCH= 0.436[0m
+[0;32mI (11783) icm42670 test: ANGLE :-: ROLL= -6.972 PITCH= 0.456[0m
+[0;32mI (11883) icm42670 test: ANGLE :-: ROLL= -6.901 PITCH= 0.481[0m
+[0;32mI (11983) icm42670 test: ANGLE :-: ROLL= -6.807 PITCH= 0.494[0m
+[0;32mI (12083) icm42670 test: ANGLE :-: ROLL= -6.719 PITCH= 0.519[0m
+[0;32mI (12183) icm42670 test: ANGLE :-: ROLL= -6.634 PITCH= 0.550[0m
+[0;32mI (12283) icm42670 test: ANGLE :-: ROLL= -6.555 PITCH= 0.562[0m
+[0;32mI (12383) icm42670 test: ANGLE :-: ROLL= -6.464 PITCH= 0.579[0m
+[0;32mI (12483) icm42670 test: ANGLE :-: ROLL= -6.381 PITCH= 0.609[0m
+[0;32mI (12583) icm42670 test: ANGLE :-: ROLL= -6.299 PITCH= 0.634[0m
+[0;32mI (12683) icm42670 test: ANGLE :-: ROLL= -6.227 PITCH= 0.672[0m
+[0;32mI (12783) icm42670 test: ANGLE :-: ROLL= -6.142 PITCH= 0.675[0m
+[0;32mI (12883) icm42670 test: ANGLE :-: ROLL= -6.048 PITCH= 0.572[0m
+[0;32mI (12983) icm42670 test: ANGLE :-: ROLL= -5.944 PITCH= 0.529[0m
+[0;32mI (13083) icm42670 test: ANGLE :-: ROLL= -5.871 PITCH= 0.546[0m
+[0;32mI (13183) icm42670 test: ANGLE :-: ROLL= -5.795 PITCH= 0.552[0m
+[0;32mI (13283) icm42670 test: ANGLE :-: ROLL= -5.739 PITCH= 0.599[0m
+[0;32mI (13383) icm42670 test: ANGLE :-: ROLL= -5.658 PITCH= 0.600[0m
+[0;32mI (13483) icm42670 test: ANGLE :-: ROLL= -5.588 PITCH= 0.610[0m
+[0;32mI (13583) icm42670 test: ANGLE :-: ROLL= -5.506 PITCH= 0.651[0m
+[0;32mI (13683) icm42670 test: ANGLE :-: ROLL= -5.440 PITCH= 0.668[0m
+[0;32mI (13783) icm42670 test: ANGLE :-: ROLL= -5.365 PITCH= 0.689[0m
+[0;32mI (13883) icm42670 test: ANGLE :-: ROLL= -5.286 PITCH= 0.711[0m
+[0;32mI (13983) icm42670 test: ANGLE :-: ROLL= -5.213 PITCH= 0.728[0m
+[0;32mI (14083) icm42670 test: ANGLE :-: ROLL= -5.137 PITCH= 0.730[0m
+[0;32mI (14183) icm42670 test: ANGLE :-: ROLL= -5.067 PITCH= 0.753[0m
+[0;32mI (14283) icm42670 test: ANGLE :-: ROLL= -4.985 PITCH= 0.769[0m
+[0;32mI (14383) icm42670 test: ANGLE :-: ROLL= -4.916 PITCH= 0.777[0m
+[0;32mI (14483) icm42670 test: ANGLE :-: ROLL= -4.842 PITCH= 0.787[0m
+[0;32mI (14583) icm42670 test: ANGLE :-: ROLL= -4.776 PITCH= 0.784[0m
+[0;32mI (14683) icm42670 test: ANGLE :-: ROLL= -4.707 PITCH= 0.797[0m
+[0;32mI (14783) icm42670 test: ANGLE :-: ROLL= -4.661 PITCH= 0.806[0m
+[0;32mI (14883) icm42670 test: ANGLE :-: ROLL= -4.608 PITCH= 0.808[0m
+[0;32mI (14983) icm42670 test: ANGLE :-: ROLL= -4.549 PITCH= 0.812[0m
+[0;32mI (15083) icm42670 test: ANGLE :-: ROLL= -4.486 PITCH= 0.834[0m
+[0;32mI (15183) icm42670 test: ANGLE :-: ROLL= -4.421 PITCH= 0.843[0m
+[0;32mI (15283) icm42670 test: ANGLE :-: ROLL= -4.357 PITCH= 0.851[0m
+[0;32mI (15383) icm42670 test: ANGLE :-: ROLL= -4.289 PITCH= 0.859[0m
+[0;32mI (15483) icm42670 test: ANGLE :-: ROLL= -4.226 PITCH= 0.866[0m
+[0;32mI (15583) icm42670 test: ANGLE :-: ROLL= -4.157 PITCH= 0.893[0m
+[0;32mI (15683) icm42670 test: ANGLE :-: ROLL= -4.094 PITCH= 0.913[0m
+[0;32mI (15783) icm42670 test: ANGLE :-: ROLL= -4.029 PITCH= 0.938[0m
+[0;32mI (15883) icm42670 test: ANGLE :-: ROLL= -3.974 PITCH= 0.952[0m
+[0;32mI (15983) icm42670 test: ANGLE :-: ROLL= -3.916 PITCH= 0.958[0m
+[0;32mI (16083) icm42670 test: ANGLE :-: ROLL= -3.857 PITCH= 0.984[0m
+[0;32mI (16183) icm42670 test: ANGLE :-: ROLL= -3.805 PITCH= 0.992[0m
+[0;32mI (16283) icm42670 test: ANGLE :-: ROLL= -3.747 PITCH= 0.999[0m
+[0;32mI (16383) icm42670 test: ANGLE :-: ROLL= -3.696 PITCH= 1.018[0m
+[0;32mI (16483) icm42670 test: ANGLE :-: ROLL= -3.645 PITCH= 1.018[0m
+[0;32mI (16583) icm42670 test: ANGLE :-: ROLL= -3.601 PITCH= 1.018[0m
+[0;32mI (16683) icm42670 test: ANGLE :-: ROLL= -3.546 PITCH= 1.032[0m
+[0;32mI (16783) icm42670 test: ANGLE :-: ROLL= -3.497 PITCH= 1.044[0m
+[0;32mI (16883) icm42670 test: ANGLE :-: ROLL= -3.449 PITCH= 1.069[0m
+[0;32mI (16983) icm42670 test: ANGLE :-: ROLL= -3.401 PITCH= 1.080[0m
+[0;32mI (17083) icm42670 test: ANGLE :-: ROLL= -3.348 PITCH= 1.105[0m
+[0;32mI (17183) icm42670 test: ANGLE :-: ROLL= -3.301 PITCH= 1.117[0m
+[0;32mI (17283) icm42670 test: ANGLE :-: ROLL= -3.250 PITCH= 1.136[0m
+[0;32mI (17383) icm42670 test: ANGLE :-: ROLL= -3.204 PITCH= 1.170[0m
+[0;32mI (17483) icm42670 test: ANGLE :-: ROLL= -3.152 PITCH= 1.180[0m
+[0;32mI (17583) icm42670 test: ANGLE :-: ROLL= -3.085 PITCH= 1.103[0m
+[0;32mI (17683) icm42670 test: ANGLE :-: ROLL= -3.064 PITCH= 1.169[0m
+[0;32mI (17783) icm42670 test: ANGLE :-: ROLL= 3.397 PITCH= 0.274[0m
+[0;32mI (17883) icm42670 test: ANGLE :-: ROLL= 5.756 PITCH= -0.780[0m
+[0;32mI (17983) icm42670 test: ANGLE :-: ROLL= 13.392 PITCH= -0.214[0m
+[0;32mI (18083) icm42670 test: ANGLE :-: ROLL= 21.581 PITCH= 1.066[0m
+[0;32mI (18183) icm42670 test: ANGLE :-: ROLL= 27.123 PITCH= 1.079[0m
+[0;32mI (18283) icm42670 test: ANGLE :-: ROLL= 30.052 PITCH= 1.117[0m
+[0;32mI (18383) icm42670 test: ANGLE :-: ROLL= 29.108 PITCH= 0.620[0m
+[0;32mI (18483) icm42670 test: ANGLE :-: ROLL= 28.866 PITCH= 1.154[0m
+[0;32mI (18583) icm42670 test: ANGLE :-: ROLL= 28.827 PITCH= 1.540[0m
+[0;32mI (18683) icm42670 test: ANGLE :-: ROLL= 28.952 PITCH= 1.876[0m
+[0;32mI (18783) icm42670 test: ANGLE :-: ROLL= 25.953 PITCH= 2.558[0m
+[0;32mI (18883) icm42670 test: ANGLE :-: ROLL= 22.894 PITCH= 4.776[0m
+[0;32mI (18983) icm42670 test: ANGLE :-: ROLL= 20.069 PITCH= 4.202[0m
+[0;32mI (19083) icm42670 test: ANGLE :-: ROLL= 16.987 PITCH= 5.797[0m
+[0;32mI (19183) icm42670 test: ANGLE :-: ROLL= 12.923 PITCH= 2.226[0m
+[0;32mI (19283) icm42670 test: ANGLE :-: ROLL= 6.644 PITCH= 0.421[0m
+[0;32mI (19383) icm42670 test: ANGLE :-: ROLL= 4.494 PITCH= -7.442[0m
+[0;32mI (19483) icm42670 test: ANGLE :-: ROLL= 4.635 PITCH= -6.156[0m
+[0;32mI (19583) icm42670 test: ANGLE :-: ROLL= 5.123 PITCH= -6.078[0m
+[0;32mI (19683) icm42670 test: ANGLE :-: ROLL= 6.317 PITCH= -6.954[0m
+[0;32mI (19783) icm42670 test: ANGLE :-: ROLL= 6.916 PITCH= -7.979[0m
+[0;32mI (19883) icm42670 test: ANGLE :-: ROLL= 6.852 PITCH= -7.513[0m
+[0;32mI (19983) icm42670 test: ANGLE :-: ROLL= 6.648 PITCH= -6.594[0m
+[0;32mI (20083) icm42670 test: ANGLE :-: ROLL= 6.554 PITCH= -6.402[0m
+[0;32mI (20183) icm42670 test: ANGLE :-: ROLL= 6.257 PITCH= -6.418[0m
+[0;32mI (20283) icm42670 test: ANGLE :-: ROLL= 6.273 PITCH= -5.752[0m
+[0;32mI (20383) icm42670 test: ANGLE :-: ROLL= 6.215 PITCH= 3.200[0m
+[0;32mI (20483) icm42670 test: ANGLE :-: ROLL= 6.176 PITCH= 15.703[0m
+[0;32mI (20583) icm42670 test: ANGLE :-: ROLL= 7.097 PITCH= 26.764[0m
+[0;32mI (20683) icm42670 test: ANGLE :-: ROLL= 8.190 PITCH= 31.846[0m
+[0;32mI (20783) icm42670 test: ANGLE :-: ROLL= 8.964 PITCH= 35.428[0m
+[0;32mI (20883) icm42670 test: ANGLE :-: ROLL= 9.002 PITCH= 33.407[0m
+[0;32mI (20983) icm42670 test: ANGLE :-: ROLL= 8.709 PITCH= 32.002[0m
+[0;32mI (21083) icm42670 test: ANGLE :-: ROLL= 9.340 PITCH= 18.713[0m
+[0;32mI (21183) icm42670 test: ANGLE :-: ROLL= 8.743 PITCH= 8.077[0m
+[0;32mI (21283) icm42670 test: ANGLE :-: ROLL= 8.408 PITCH= 2.012[0m
+[0;32mI (21383) icm42670 test: ANGLE :-: ROLL= 7.928 PITCH= -7.389[0m
+[0;32mI (21483) icm42670 test: ANGLE :-: ROLL= 8.590 PITCH= -13.057[0m
+[0;32mI (21583) icm42670 test: ANGLE :-: ROLL= 7.197 PITCH= -9.526[0m
+[0;32mI (21683) icm42670 test: ANGLE :-: ROLL= 4.404 PITCH= -6.329[0m
+[0;32mI (21783) icm42670 test: ANGLE :-: ROLL= -0.557 PITCH= -5.215[0m
+[0;32mI (21883) icm42670 test: ANGLE :-: ROLL= 8.087 PITCH= -14.950[0m
+[0;32mI (21983) icm42670 test: ANGLE :-: ROLL= 8.010 PITCH= -15.410[0m
+[0;32mI (22083) icm42670 test: ANGLE :-: ROLL= 7.942 PITCH= -15.248[0m
+[0;32mI (22183) icm42670 test: ANGLE :-: ROLL= 7.881 PITCH= -15.085[0m
+[0;32mI (22283) icm42670 test: ANGLE :-: ROLL= 7.834 PITCH= -14.924[0m
+[0;32mI (22383) icm42670 test: ANGLE :-: ROLL= 7.782 PITCH= -14.763[0m
+[0;32mI (22483) icm42670 test: ANGLE :-: ROLL= 7.718 PITCH= -14.593[0m
+[0;32mI (22583) icm42670 test: ANGLE :-: ROLL= 7.667 PITCH= -14.437[0m
+[0;32mI (22683) icm42670 test: ANGLE :-: ROLL= 7.609 PITCH= -14.277[0m

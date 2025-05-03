@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/Users/calvin/esp/lab2/build",
+  "command": "/Users/calvin/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20241119/riscv32-esp-elf/bin/riscv32-esp-elf-gcc -march=rv32imc_zicsr_zifencei  -fdiagnostics-color=always -o CMakeFiles/lab2.elf.dir/project_elf_src_esp32c3.c.obj -c /Users/calvin/esp/lab2/build/project_elf_src_esp32c3.c",
+  "file": "/Users/calvin/esp/lab2/build/project_elf_src_esp32c3.c",
+  "output": "CMakeFiles/lab2.elf.dir/project_elf_src_esp32c3.c.obj"
+}
+]

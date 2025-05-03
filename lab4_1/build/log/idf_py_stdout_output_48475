@@ -1,0 +1,222 @@
+Command: /Users/calvin/.espressif/python_env/idf5.5_py3.13_env/bin/python /Users/calvin/esp/esp-idf/tools/idf_monitor.py -p /dev/cu.usbmodem101 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --revision 3 --decode-panic backtrace /Users/calvin/esp/lab4_1/build/lab4_1.elf /Users/calvin/esp/lab4_1/build/bootloader/bootloader.elf -m '/Users/calvin/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/Users/calvin/esp/esp-idf/tools/idf.py'
+the binary image header(2048k). Using the size in the binary image header.
+I (ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xf (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4004c0dc
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x15b0
+load:0x403cbf10,len:0xc34
+load:0x403ce710,len:0x2fe8
+entry 0x403cbf1a
+[0;32mI (24) boot: ESP-IDF v5.5-dev-2916-g1c468f6825 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time May  2 2025 13:41:44[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (26) boot: efuse block revision: v1.3[0m
+[0;32mI (30) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (34) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (45) boot: Partition Table:[0m
+[0;32mI (48) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (54) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (61) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (67) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (74) boot: End of partition table[0m
+[0;32mI (77) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0a530h ( 42288) map[0m
+[0;32mI (91) esp_image: segment 1: paddr=0001a558 vaddr=3fc8c000 size=012b0h (  4784) load[0m
+[0;32mI (93) esp_image: segment 2: paddr=0001b810 vaddr=40380000 size=04808h ( 18440) load[0m
+[0;32mI (103) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1b0d8h (110808) map[0m
+[0;32mI (125) esp_image: segment 4: paddr=0003b100 vaddr=40384808 size=07780h ( 30592) load[0m
+[0;32mI (130) esp_image: segment 5: paddr=00042888 vaddr=50000000 size=0001ch (    28) load[0m
+[0;32mI (134) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (135) boot: Disabling RNG early entropy source...[0m
+[0;32mI (150) cpu_start: Unicore app[0m
+[0;32mI (158) cpu_start: Pro cpu start user code[0m
+[0;32mI (158) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (158) app_init: Application information:[0m
+[0;32mI (159) app_init: Project name:     lab4_1[0m
+[0;32mI (162) app_init: App version:      1[0m
+[0;32mI (166) app_init: Compile time:     May  2 2025 13:41:38[0m
+[0;32mI (171) app_init: ELF file SHA256:  fdbcd4e08...[0m
+[0;32mI (175) app_init: ESP-IDF:          v5.5-dev-2916-g1c468f6825[0m
+[0;32mI (180) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (184) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (188) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (192) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (198) heap_init: At 3FC8E2E0 len 00031D20 (199 KiB): RAM[0m
+[0;32mI (204) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (210) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (216) heap_init: At 5000001C len 00001FCC (7 KiB): RTCRAM[0m
+[0;32mI (222) spi_flash: detected chip: generic[0m
+[0;32mI (225) spi_flash: flash io: dio[0m
+[0;33mW (228) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (240) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (246) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (253) main_task: Started on CPU0[0m
+[0;32mI (253) main_task: Calling app_main()[0m
+[0;32mI (253) icm42670 test: I2C bus initialized successfully[0m
+[0;32mI (263) icm42670 test: ICM42670 sensor created[0m
+[0;32mI (273) icm42670 test: ICM42670 sensor initialized successfully[0m
+[0;32mI (273) icm42670 test: Powering ICM42670 accelerometer on[0m
+[0;32mI (273) icm42670 test: Accelerometer ready[0m
+[0;32mI (273) icm42670 test: Powering ICM42670 gyroscope on[0m
+[0;32mI (283) icm42670 test: Gyroscope ready[0m
+[0;32mI (333) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.37, gyro_y:0.12, gyro_z:-0.55 temp: 536.6[0m
+[0;32mI (383) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.37, gyro_y:0.37, gyro_z:-0.61 temp: 536.8[0m
+[0;32mI (433) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.37, gyro_y:0.18, gyro_z:-0.06 temp: 536.5[0m
+[0;32mI (483) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.30, gyro_y:0.24, gyro_z:-0.67 temp: 536.8[0m
+[0;32mI (533) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.37, gyro_y:0.24, gyro_z:-0.67 temp: 536.6[0m
+[0;32mI (583) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.37, gyro_y:0.18, gyro_z:-0.55 temp: 536.6[0m
+[0;32mI (633) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.30, gyro_y:0.24, gyro_z:-0.67 temp: 536.6[0m
+[0;32mI (683) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.30, gyro_y:0.24, gyro_z:-0.67 temp: 536.6[0m
+[0;32mI (733) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.30, gyro_y:0.24, gyro_z:-0.79 temp: 536.6[0m
+[0;32mI (783) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.30, gyro_y:0.24, gyro_z:-0.67 temp: 536.5[0m
+[0;32mI (833) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.37, gyro_y:0.30, gyro_z:-0.67 temp: 536.5[0m
+[0;32mI (883) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.37, gyro_y:0.18, gyro_z:-0.67 temp: 536.7[0m
+[0;32mI (933) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.43, gyro_y:0.30, gyro_z:-0.67 temp: 536.6[0m
+[0;32mI (983) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.43, gyro_y:0.30, gyro_z:-0.73 temp: 536.7[0m
+[0;32mI (1033) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.30, gyro_y:0.18, gyro_z:-0.67 temp: 536.6[0m
+[0;32mI (1083) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.37, gyro_y:0.24, gyro_z:-0.79 temp: 536.7[0m
+[0;32mI (1133) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.37, gyro_y:0.24, gyro_z:-0.67 temp: 536.5[0m
+[0;32mI (1183) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.43, gyro_y:0.18, gyro_z:-0.67 temp: 536.7[0m
+[0;32mI (1233) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.37, gyro_y:0.24, gyro_z:-0.73 temp: 536.6[0m
+[0;32mI (1283) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.49, gyro_y:0.24, gyro_z:-0.73 temp: 536.7[0m
+[0;32mI (1333) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.30, gyro_y:0.30, gyro_z:-0.73 temp: 536.7[0m
+[0;32mI (1383) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.37, gyro_y:0.24, gyro_z:-0.67 temp: 536.7[0m
+[0;32mI (1433) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.37, gyro_y:0.24, gyro_z:-0.61 temp: 536.7[0m
+[0;32mI (1483) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.37, gyro_y:0.24, gyro_z:-0.79 temp: 536.5[0m
+[0;32mI (1533) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.43, gyro_y:0.30, gyro_z:-0.67 temp: 536.7[0m
+[0;32mI (1583) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.43, gyro_y:0.24, gyro_z:-0.67 temp: 536.7[0m
+[0;32mI (1633) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.30, gyro_y:0.24, gyro_z:-0.79 temp: 536.5[0m
+[0;32mI (1683) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.49, gyro_y:0.24, gyro_z:-0.67 temp: 536.6[0m
+[0;32mI (1733) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.37, gyro_y:0.30, gyro_z:-0.55 temp: 536.6[0m
+[0;32mI (1783) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.30, gyro_y:0.30, gyro_z:-0.73 temp: 536.6[0m
+[0;32mI (1833) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.37, gyro_y:0.30, gyro_z:-0.85 temp: 536.5[0m
+[0;32mI (1883) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.49, gyro_y:0.12, gyro_z:-0.67 temp: 536.7[0m
+[0;32mI (1933) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.43, gyro_y:0.12, gyro_z:-0.73 temp: 536.5[0m
+[0;32mI (1983) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.37, gyro_y:0.24, gyro_z:-0.79 temp: 536.7[0m
+[0;32mI (2033) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.24, gyro_y:0.18, gyro_z:-0.67 temp: 536.6[0m
+[0;32mI (2083) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.30, gyro_y:0.24, gyro_z:-0.67 temp: 536.7[0m
+[0;32mI (2133) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.37, gyro_y:0.12, gyro_z:-0.61 temp: 536.4[0m
+[0;32mI (2183) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.43, gyro_y:0.24, gyro_z:-0.85 temp: 536.7[0m
+[0;32mI (2233) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.43, gyro_y:0.30, gyro_z:-0.73 temp: 536.6[0m
+[0;32mI (2283) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.37, gyro_y:0.24, gyro_z:-0.61 temp: 536.7[0m
+[0;32mI (2333) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.24, gyro_y:0.24, gyro_z:-0.85 temp: 536.6[0m
+[0;32mI (2383) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.37, gyro_y:0.18, gyro_z:-0.79 temp: 536.7[0m
+[0;32mI (2433) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.37, gyro_y:0.30, gyro_z:-0.67 temp: 536.7[0m
+[0;32mI (2483) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.43, gyro_y:0.12, gyro_z:-0.67 temp: 537.0[0m
+[0;32mI (2533) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.37, gyro_y:0.24, gyro_z:-0.73 temp: 536.6[0m
+[0;32mI (2583) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.43, gyro_y:0.24, gyro_z:-0.61 temp: 536.7[0m
+[0;32mI (2633) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.49, gyro_y:0.24, gyro_z:-0.79 temp: 536.7[0m
+[0;32mI (2683) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.37, gyro_y:0.24, gyro_z:-0.73 temp: 536.6[0m
+[0;32mI (2733) icm42670 test: acc_x:0.01, acc_y:0.07, acc_z:1.02, gyro_x:0.37, gyro_y:0.24, gyro_z:-0.61 temp: 536.7[0m
+[0;32mI (2783) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.43, gyro_y:0.24, gyro_z:-0.85 temp: 536.8[0m
+[0;32mI (2833) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.43, gyro_y:0.37, gyro_z:-0.73 temp: 536.6[0m
+[0;32mI (2883) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.37, gyro_y:0.24, gyro_z:-0.73 temp: 536.8[0m
+[0;32mI (2933) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.43, gyro_y:0.24, gyro_z:-0.79 temp: 536.6[0m
+[0;32mI (2983) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.43, gyro_y:0.24, gyro_z:-0.61 temp: 536.8[0m
+[1;31mE (3033) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (3033) i2c.master: s_i2c_synchronous_transaction(935): I2C transaction failed[0m
+[1;31mE (3033) i2c.master: i2c_master_transmit_receive(1238): I2C transaction failed[0m
+[1;31mE (3033) ICM42670: icm42670_get_gyro_value(308): Get raw value error![0m
+ESP_ERROR_CHECK failed: esp_err_t 0x103 (ESP_ERR_INVALID_STATE) at 0x42009b0a
+file: "./main/lab4_1.c" line 119
+func: app_main
+expression: icm42670_get_gyro_value(icm42670, &gyro)
+
+abort() was called at PC 0x40383a41 on core 0
+Core  0 register dump:
+MEPC    : 0x403807b0  RA      : 0x40383a4c  SP      : 0x3fc8fc70  GP      : 0x3fc8c800  
+TP      : 0x3fc8fdc0  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000004  S1      : 0x3fc8fcd4  A0      : 0x3fc8fc9c  A1      : 0x3fc8fcd2  
+A2      : 0x00000000  A3      : 0x3fc8fcc9  A4      : 0x00000001  A5      : 0x3fc8e000  
+A6      : 0x7a797877  A7      : 0x76757473  S2      : 0x00000ba7  S3      : 0x3f888000  
+S4      : 0x00000000  S5      : 0x00000036  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+add symbol table from file "/Users/calvin/esp/lab4_1/build/bootloader/bootloader.elf"
+panic_abort (details=details@entry=0x3fc8fc9c "abort() was called at PC 0x40383a41 on core 0") at /Users/calvin/esp/esp-idf/components/esp_system/panic.c:482
+482	    asm("unimp");   // should be an invalid operation on RISC-V targets
+#0  panic_abort (details=details@entry=0x3fc8fc9c "abort() was called at PC 0x40383a41 on core 0") at /Users/calvin/esp/esp-idf/components/esp_system/panic.c:482
+#1  0x40383a4c in esp_system_abort (details=details@entry=0x3fc8fc9c "abort() was called at PC 0x40383a41 on core 0") at /Users/calvin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+#2  0x4038a268 in abort () at /Users/calvin/esp/esp-idf/components/newlib/src/abort.c:38
+#3  0x40383a44 in _esp_error_check_failed (rc=<optimized out>, file=file@entry=0x3c024ad0 "", line=line@entry=119, function=function@entry=0x3c028c1c <__func__.0> "", expression=expression@entry=0x3c024bac "") at /Users/calvin/esp/esp-idf/components/esp_system/esp_err.c:49
+#4  0x42009b0e in app_main () at /Users/calvin/esp/lab4_1/main/lab4_1.c:119
+#5  0x4201a6c4 in main_task (args=<error reading variable: value has been optimized out>) at /Users/calvin/esp/esp-idf/components/freertos/app_startup.c:208
+#6  0x403849d4 in vPortTaskWrapper (pxCode=<optimized out>, pvParameters=<optimized out>) at /Users/calvin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:255
+
+
+
+ELF file SHA256: fdbcd4e08
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xf (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40380768
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x15b0
+load:0x403cbf10,len:0xc34
+load:0x403ce710,len:0x2fe8
+entry 0x403cbf1a
+[0;32mI (24) boot: ESP-IDF v5.5-dev-2916-g1c468f6825 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time May  2 2025 13:41:44[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (26) boot: efuse block revision: v1.3[0m
+[0;32mI (29) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (33) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (40) boot: Enabling RNG early entropy source...[0m
+[0;32mI (45) boot: Partition Table:[0m
+[0;32mI (48) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (54) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (60) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (67) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (73) boot: End of partition table[0m
+[0;32mI (77) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0a530h ( 42288) map[0m
+[0;32mI (91) esp_image: segment 1: paddr=0001a558 vaddr=3fc8c000 size=012b0h (  4784) load[0m
+[0;32mI (92) esp_image: segment 2: paddr=0001b810 vaddr=40380000 size=04808h ( 18440) load[0m
+[0;32mI (102) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1b0d8h (110808) map[0m
+[0;32mI (124) esp_image: segment 4: paddr=0003b100 vaddr=40384808 size=07780h ( 30592) load[0m
+[0;32mI (130) esp_image: segment 5: paddr=00042888 vaddr=50000000 size=0001ch (    28) load[0m
+[0;32mI (134) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (134) boot: Disabling RNG early entropy source...[0m
+[0;32mI (149) cpu_start: Unicore app[0m
+[0;32mI (158) cpu_start: Pro cpu start user code[0m
+[0;32mI (158) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (158) app_init: Application information:[0m
+[0;32mI (158) app_init: Project name:     lab4_1[0m
+[0;32mI (162) app_init: App version:      1[0m
+[0;32mI (165) app_init: Compile time:     May  2 2025 13:41:38[0m
+[0;32mI (170) app_init: ELF file SHA256:  fdbcd4e08...[0m
+[0;32mI (174) app_init: ESP-IDF:          v5.5-dev-2916-g1c468f6825[0m
+[0;32mI (180) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (184) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (188) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (192) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (198) heap_init: At 3FC8E2E0 len 00031D20 (199 KiB): RAM[0m
+[0;32mI (203) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (209) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (215) heap_init: At 5000001C len 00001FCC (7 KiB): RTCRAM[0m
+[0;32mI (221) spi_flash: detected chip: generic[0m
+[0;32mI (224) spi_flash: flash io: dio[0m
+[0;33mW (227) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (239) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (246) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (252) main_task: Started on CPU0[0m
+[0;32mI (252) main_task: Calling app_main()[0m
+[0;32mI (252) icm42670 test: I2C bus initialized successfully[0m
+[0;32mI (262) icm42670 test: ICM42670 sensor created[0m
+[0;32mI (272) icm42670 test: ICM42670 sensor initialized successfully[0m
+[0;32mI (272) icm42670 test: Powering ICM42670 accelerometer on[0m
+[0;32mI (272) icm42670 test: Accelerometer ready[0m
+[0;32mI (272) icm42670 test: Powering ICM42670 gyroscope on[0m
+[0;32mI (282) icm42670 test: Gyroscope ready[0m
+[0;32mI (332) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.49, gyro_y:0.12, gyro_z:-0.67 temp: 536.5[0m
+[0;32mI (382) icm42670 test: acc_x:0.01, acc_y:0.06, acc_z:1.02, gyro_x:0.49, gyro_y:0.18, gyro_z:-0.73 temp: 536.7[0m

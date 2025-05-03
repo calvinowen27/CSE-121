@@ -1,0 +1,1 @@
+Command: /Users/calvin/.espressif/python_env/idf5.5_py3.13_env/bin/python /Users/calvin/esp/esp-idf/tools/idf_monitor.py -p COM4 -b  --toolchain-prefix riscv32-esp-elf- --target esp32c3 --decode-panic backtrace -m '/Users/calvin/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/Users/calvin/esp/esp-idf/tools/idf.py'

@@ -1,0 +1,305 @@
+Command: /Users/calvin/.espressif/python_env/idf5.5_py3.13_env/bin/python /Users/calvin/esp/esp-idf/tools/idf_monitor.py -p /dev/cu.usbmodem101 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --revision 3 --decode-panic backtrace /Users/calvin/esp/lab4_1/build/lab4_1.elf /Users/calvin/esp/lab4_1/build/bootloader/bootloader.elf -m '/Users/calvin/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/Users/calvin/esp/esp-idf/tools/idf.py'
+[0;32mI (244) sleep_gpio: Configure to isolate all GPIO pins in sESP-ROM:esp32c3-api1-20210207[0m
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xf (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4004c0d6
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x15b0
+load:0x403cbf10,len:0xc34
+load:0x403ce710,len:0x2fe8
+entry 0x403cbf1a
+[0;32mI (24) boot: ESP-IDF v5.5-dev-2916-g1c468f6825 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time May  2 2025 13:41:44[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (26) boot: efuse block revision: v1.3[0m
+[0;32mI (30) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (34) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (45) boot: Partition Table:[0m
+[0;32mI (48) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (54) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (61) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (67) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (74) boot: End of partition table[0m
+[0;32mI (77) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0a3a0h ( 41888) map[0m
+[0;32mI (91) esp_image: segment 1: paddr=0001a3c8 vaddr=3fc8c000 size=012b0h (  4784) load[0m
+[0;32mI (93) esp_image: segment 2: paddr=0001b680 vaddr=40380000 size=04998h ( 18840) load[0m
+[0;32mI (103) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1ae54h (110164) map[0m
+[0;32mI (125) esp_image: segment 4: paddr=0003ae7c vaddr=40384998 size=075f0h ( 30192) load[0m
+[0;32mI (130) esp_image: segment 5: paddr=00042474 vaddr=50000000 size=0001ch (    28) load[0m
+[0;32mI (134) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (135) boot: Disabling RNG early entropy source...[0m
+[0;32mI (150) cpu_start: Unicore app[0m
+[0;32mI (158) cpu_start: Pro cpu start user code[0m
+[0;32mI (158) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (158) app_init: Application information:[0m
+[0;32mI (158) app_init: Project name:     lab4_1[0m
+[0;32mI (162) app_init: App version:      1[0m
+[0;32mI (166) app_init: Compile time:     May  2 2025 13:41:38[0m
+[0;32mI (171) app_init: ELF file SHA256:  5c708f470...[0m
+[0;32mI (175) app_init: ESP-IDF:          v5.5-dev-2916-g1c468f6825[0m
+[0;32mI (180) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (184) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (188) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (192) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (198) heap_init: At 3FC8E2E0 len 00031D20 (199 KiB): RAM[0m
+[0;32mI (203) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (210) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (216) heap_init: At 5000001C len 00001FCC (7 KiB): RTCRAM[0m
+[0;32mI (222) spi_flash: detected chip: generic[0m
+[0;32mI (225) spi_flash: flash io: dio[0m
+[0;33mW (228) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (240) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (246) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (253) main_task: Started on CPU0[0m
+[0;32mI (253) main_task: Calling app_main()[0m
+[0;32mI (253) icm42670 test: I2C bus initialized successfully[0m
+[0;32mI (263) icm42670 test: ICM42670 sensor created[0m
+[0;32mI (273) icm42670 test: ICM42670 sensor initialized successfully[0m
+[0;32mI (273) icm42670 test: Powering ICM42670 accelerometer on[0m
+[0;32mI (273) icm42670 test: Accelerometer ready[0m
+[0;32mI (273) icm42670 test: Powering ICM42670 gyroscope on[0m
+[0;32mI (283) icm42670 test: Gyroscope ready[0m
+[0;32mI (383) icm42670 test: GYRO [˚/s]: X=0.427 Y=0.305 Z=-0.732[0m
+[0;32mI (483) icm42670 test: GYRO [˚/s]: X=0.427 Y=0.244 Z=-0.610[0m
+[0;32mI (583) icm42670 test: GYRO [˚/s]: X=0.305 Y=0.305 Z=-0.854[0m
+[0;32mI (683) icm42670 test: GYRO [˚/s]: X=0.488 Y=0.244 Z=-0.732[0m
+[0;32mI (783) icm42670 test: GYRO [˚/s]: X=0.488 Y=0.244 Z=-0.732[0m
+[0;32mI (883) icm42670 test: GYRO [˚/s]: X=0.427 Y=0.183 Z=-0.671[0m
+[0;32mI (983) icm42670 test: GYRO [˚/s]: X=0.427 Y=0.305 Z=-0.671[0m
+[0;32mI (1083) icm42670 test: GYRO [˚/s]: X=0.427 Y=0.244 Z=-0.732[0m
+[0;32mI (1183) icm42670 test: GYRO [˚/s]: X=0.427 Y=0.244 Z=-0.732[0m
+[0;32mI (1283) icm42670 test: GYRO [˚/s]: X=0.366 Y=0.244 Z=-0.671[0m
+[0;32mI (1383) icm42670 test: GYRO [˚/s]: X=0.488 Y=0.183 Z=-0.732[0m
+[0;32mI (1483) icm42670 test: GYRO [˚/s]: X=0.488 Y=0.122 Z=-0.671[0m
+[0;32mI (1583) icm42670 test: GYRO [˚/s]: X=0.305 Y=0.183 Z=-0.671[0m
+[0;32mI (1683) icm42670 test: GYRO [˚/s]: X=0.427 Y=0.244 Z=-0.732[0m
+[0;32mI (1783) icm42670 test: GYRO [˚/s]: X=0.488 Y=0.183 Z=-0.610[0m
+[0;32mI (1883) icm42670 test: GYRO [˚/s]: X=0.427 Y=0.122 Z=-0.732[0m
+[0;32mI (1983) icm42670 test: GYRO [˚/s]: X=0.366 Y=0.183 Z=-0.671[0m
+[0;32mI (2083) icm42670 test: GYRO [˚/s]: X=0.488 Y=0.244 Z=-0.671[0m
+[0;32mI (2183) icm42670 test: GYRO [˚/s]: X=0.976 Y=-1.280 Z=-0.305[0m
+[0;32mI (2283) icm42670 test: GYRO [˚/s]: X=0.305 Y=-45.488 Z=0.854[0m
+[0;32mI (2383) icm42670 test: GYRO [˚/s]: X=-14.939 Y=-77.988 Z=-3.598[0m
+[0;32mI (2483) icm42670 test: GYRO [˚/s]: X=-7.805 Y=-124.939 Z=-0.061[0m
+[0;32mI (2583) icm42670 test: GYRO [˚/s]: X=-1.220 Y=-70.854 Z=-2.195[0m
+[0;32mI (2683) icm42670 test: GYRO [˚/s]: X=-1.220 Y=-55.122 Z=-4.268[0m
+[0;32mI (2783) icm42670 test: GYRO [˚/s]: X=1.341 Y=-36.829 Z=-3.598[0m
+[0;32mI (2883) icm42670 test: GYRO [˚/s]: X=0.732 Y=-21.585 Z=-1.220[0m
+[0;32mI (2983) icm42670 test: GYRO [˚/s]: X=3.659 Y=-11.768 Z=-0.366[0m
+[0;32mI (3083) icm42670 test: GYRO [˚/s]: X=2.500 Y=-7.805 Z=-0.488[0m
+[0;32mI (3183) icm42670 test: GYRO [˚/s]: X=2.134 Y=-1.463 Z=-1.280[0m
+[0;32mI (3283) icm42670 test: GYRO [˚/s]: X=0.793 Y=-0.183 Z=-1.159[0m
+[0;32mI (3383) icm42670 test: GYRO [˚/s]: X=1.768 Y=15.610 Z=-1.707[0m
+[0;32mI (3483) icm42670 test: GYRO [˚/s]: X=5.793 Y=45.976 Z=0.427[0m
+[0;32mI (3583) icm42670 test: GYRO [˚/s]: X=12.073 Y=112.317 Z=3.476[0m
+[0;32mI (3683) icm42670 test: GYRO [˚/s]: X=18.354 Y=90.305 Z=-4.390[0m
+[0;32mI (3783) icm42670 test: GYRO [˚/s]: X=-4.207 Y=70.671 Z=2.134[0m
+[0;32mI (3883) icm42670 test: GYRO [˚/s]: X=-3.232 Y=3.415 Z=-6.951[0m
+[0;32mI (3983) icm42670 test: GYRO [˚/s]: X=0.305 Y=0.366 Z=-1.402[0m
+[0;32mI (4083) icm42670 test: GYRO [˚/s]: X=0.366 Y=0.244 Z=-0.854[0m
+[0;32mI (4183) icm42670 test: GYRO [˚/s]: X=0.366 Y=0.366 Z=-0.427[0m
+[0;32mI (4283) icm42670 test: GYRO [˚/s]: X=0.427 Y=0.183 Z=-0.183[0m
+[0;32mI (4383) icm42670 test: GYRO [˚/s]: X=0.488 Y=0.122 Z=0.488[0m
+[0;32mI (4483) icm42670 test: GYRO [˚/s]: X=0.305 Y=0.183 Z=-0.610[0m
+[0;32mI (4583) icm42670 test: GYRO [˚/s]: X=0.183 Y=0.671 Z=-0.061[0m
+[0;32mI (4683) icm42670 test: GYRO [˚/s]: X=1.707 Y=50.061 Z=1.707[0m
+[0;32mI (4783) icm42670 test: GYRO [˚/s]: X=0.793 Y=34.390 Z=0.793[0m
+[0;32mI (4883) icm42670 test: GYRO [˚/s]: X=-0.488 Y=43.110 Z=2.622[0m
+[0;32mI (4983) icm42670 test: GYRO [˚/s]: X=-0.244 Y=49.817 Z=-0.366[0m
+[0;32mI (5083) icm42670 test: GYRO [˚/s]: X=0.488 Y=42.500 Z=-0.061[0m
+[0;32mI (5183) icm42670 test: GYRO [˚/s]: X=0.244 Y=34.268 Z=0.000[0m
+[0;32mI (5283) icm42670 test: GYRO [˚/s]: X=2.012 Y=44.390 Z=-1.098[0m
+[0;32mI (5383) icm42670 test: GYRO [˚/s]: X=0.671 Y=10.366 Z=-0.366[0m
+[0;32mI (5483) icm42670 test: GYRO [˚/s]: X=0.671 Y=5.793 Z=-0.976[0m
+[0;32mI (5583) icm42670 test: GYRO [˚/s]: X=-2.073 Y=-27.561 Z=-7.012[0m
+[0;32mI (5683) icm42670 test: GYRO [˚/s]: X=0.976 Y=-242.866 Z=-8.780[0m
+[0;32mI (5783) icm42670 test: GYRO [˚/s]: X=0.854 Y=0.000 Z=-0.915[0m
+[0;32mI (5883) icm42670 test: GYRO [˚/s]: X=0.366 Y=0.183 Z=-0.549[0m
+[0;32mI (5983) icm42670 test: GYRO [˚/s]: X=0.366 Y=0.244 Z=-0.610[0m
+[0;32mI (6083) icm42670 test: GYRO [˚/s]: X=0.427 Y=0.366 Z=-0.793[0m
+[0;32mI (6183) icm42670 test: GYRO [˚/s]: X=0.427 Y=0.122 Z=-0.732[0m
+[0;32mI (6283) icm42670 test: GYRO [˚/s]: X=0.427 Y=0.183 Z=-0.610[0m
+[0;32mI (6383) icm42670 test: GYRO [˚/s]: X=0.366 Y=0.183 Z=-0.488[0m
+[0;32mI (6483) icm42670 test: GYRO [˚/s]: X=6.098 Y=-6.646 Z=-0.305[0m
+[0;32mI (6583) icm42670 test: GYRO [˚/s]: X=0.549 Y=-12.500 Z=-0.610[0m
+[0;32mI (6683) icm42670 test: GYRO [˚/s]: X=0.183 Y=-14.268 Z=0.610[0m
+[0;32mI (6783) icm42670 test: GYRO [˚/s]: X=0.610 Y=-30.549 Z=-1.829[0m
+[0;32mI (6883) icm42670 test: GYRO [˚/s]: X=1.037 Y=-39.146 Z=2.866[0m
+[0;32mI (6983) icm42670 test: GYRO [˚/s]: X=0.000 Y=-60.610 Z=-12.988[0m
+[0;32mI (7083) icm42670 test: GYRO [˚/s]: X=-0.732 Y=-17.927 Z=-3.049[0m
+[0;32mI (7183) icm42670 test: GYRO [˚/s]: X=-1.341 Y=-27.256 Z=-3.902[0m
+[0;32mI (7283) icm42670 test: GYRO [˚/s]: X=-0.427 Y=-18.293 Z=-1.951[0m
+[0;32mI (7383) icm42670 test: GYRO [˚/s]: X=0.061 Y=-13.476 Z=-1.402[0m
+[0;32mI (7483) icm42670 test: GYRO [˚/s]: X=0.000 Y=-6.341 Z=-1.098[0m
+[0;32mI (7583) icm42670 test: GYRO [˚/s]: X=1.402 Y=-19.329 Z=-0.366[0m
+[0;32mI (7683) icm42670 test: GYRO [˚/s]: X=0.488 Y=-1.098 Z=-0.610[0m
+[0;32mI (7783) icm42670 test: GYRO [˚/s]: X=0.854 Y=5.061 Z=-0.244[0m
+[0;32mI (7883) icm42670 test: GYRO [˚/s]: X=4.390 Y=31.951 Z=4.024[0m
+[0;32mI (7983) icm42670 test: GYRO [˚/s]: X=4.573 Y=54.268 Z=1.585[0m
+[0;32mI (8083) icm42670 test: GYRO [˚/s]: X=2.988 Y=112.622 Z=5.671[0m
+[0;32mI (8183) icm42670 test: GYRO [˚/s]: X=-3.049 Y=4.390 Z=-3.293[0m
+[0;32mI (8283) icm42670 test: GYRO [˚/s]: X=0.488 Y=0.366 Z=-1.037[0m
+[0;32mI (8383) icm42670 test: GYRO [˚/s]: X=0.366 Y=0.244 Z=-0.793[0m
+[0;32mI (8483) icm42670 test: GYRO [˚/s]: X=0.366 Y=0.305 Z=-0.793[0m
+[0;32mI (8583) icm42670 test: GYRO [˚/s]: X=0.305 Y=0.549 Z=-1.707[0m
+[0;32mI (8683) icm42670 test: GYRO [˚/s]: X=-0.061 Y=0.976 Z=-11.220[0m
+[0;32mI (8783) icm42670 test: GYRO [˚/s]: X=0.549 Y=48.293 Z=-1.098[0m
+[0;32mI (8883) icm42670 test: GYRO [˚/s]: X=1.341 Y=48.598 Z=-0.427[0m
+[0;32mI (8983) icm42670 test: GYRO [˚/s]: X=0.488 Y=62.195 Z=1.402[0m
+[0;32mI (9083) icm42670 test: GYRO [˚/s]: X=0.549 Y=57.317 Z=-0.976[0m
+[0;32mI (9183) icm42670 test: GYRO [˚/s]: X=1.037 Y=18.354 Z=-2.805[0m
+[0;32mI (9283) icm42670 test: GYRO [˚/s]: X=0.671 Y=25.000 Z=-1.280[0m
+[0;32mI (9383) icm42670 test: GYRO [˚/s]: X=0.610 Y=22.317 Z=-1.402[0m
+[0;32mI (9483) icm42670 test: GYRO [˚/s]: X=0.915 Y=14.268 Z=-1.524[0m
+[0;32mI (9583) icm42670 test: GYRO [˚/s]: X=1.220 Y=-77.927 Z=-3.049[0m
+[0;32mI (9683) icm42670 test: GYRO [˚/s]: X=-1.037 Y=-64.390 Z=0.427[0m
+[0;32mI (9783) icm42670 test: GYRO [˚/s]: X=-1.037 Y=-117.805 Z=-1.280[0m
+[0;32mI (9883) icm42670 test: GYRO [˚/s]: X=6.707 Y=-7.134 Z=5.000[0m
+[0;32mI (9983) icm42670 test: GYRO [˚/s]: X=0.671 Y=-0.061 Z=-0.549[0m
+[0;32mI (10083) icm42670 test: GYRO [˚/s]: X=0.488 Y=0.122 Z=-0.732[0m
+[0;32mI (10183) icm42670 test: GYRO [˚/s]: X=0.366 Y=0.183 Z=-0.671[0m
+[0;32mI (10283) icm42670 test: GYRO [˚/s]: X=0.366 Y=0.000 Z=-0.793[0m
+[0;32mI (10383) icm42670 test: GYRO [˚/s]: X=1.890 Y=-42.866 Z=-3.598[0m
+[0;32mI (10483) icm42670 test: GYRO [˚/s]: X=0.122 Y=-75.427 Z=2.622[0m
+[0;32mI (10583) icm42670 test: GYRO [˚/s]: X=-1.341 Y=-75.976 Z=-0.061[0m
+[0;32mI (10683) icm42670 test: GYRO [˚/s]: X=-0.244 Y=-33.476 Z=-3.659[0m
+[0;32mI (10783) icm42670 test: GYRO [˚/s]: X=0.427 Y=-33.476 Z=-0.732[0m
+[0;32mI (10883) icm42670 test: GYRO [˚/s]: X=0.061 Y=-24.817 Z=-1.768[0m
+[0;32mI (10983) icm42670 test: GYRO [˚/s]: X=0.549 Y=2.256 Z=-1.280[0m
+[0;32mI (11083) icm42670 test: GYRO [˚/s]: X=1.829 Y=32.195 Z=2.561[0m
+[0;32mI (11183) icm42670 test: GYRO [˚/s]: X=0.183 Y=-2.439 Z=-0.671[0m
+[0;32mI (11283) icm42670 test: GYRO [˚/s]: X=0.427 Y=0.976 Z=-0.122[0m
+[0;32mI (11383) icm42670 test: GYRO [˚/s]: X=0.488 Y=6.951 Z=-0.732[0m
+[0;32mI (11483) icm42670 test: GYRO [˚/s]: X=6.585 Y=122.622 Z=0.793[0m
+[0;32mI (11583) icm42670 test: GYRO [˚/s]: X=1.646 Y=70.671 Z=1.829[0m
+[0;32mI (11683) icm42670 test: GYRO [˚/s]: X=-10.183 Y=62.500 Z=2.805[0m
+[0;32mI (11783) icm42670 test: GYRO [˚/s]: X=-5.000 Y=6.646 Z=-2.256[0m
+[0;32mI (11883) icm42670 test: GYRO [˚/s]: X=0.366 Y=0.305 Z=-0.915[0m
+[0;32mI (11983) icm42670 test: GYRO [˚/s]: X=0.244 Y=0.488 Z=-4.146[0m
+[0;32mI (12083) icm42670 test: GYRO [˚/s]: X=0.488 Y=0.183 Z=-1.951[0m
+[0;32mI (12183) icm42670 test: GYRO [˚/s]: X=0.488 Y=0.183 Z=-0.610[0m
+[0;32mI (12283) icm42670 test: GYRO [˚/s]: X=0.244 Y=0.427 Z=-0.671[0m
+[0;32mI (12383) icm42670 test: GYRO [˚/s]: X=0.122 Y=0.549 Z=-0.854[0m
+[0;32mI (12483) icm42670 test: GYRO [˚/s]: X=1.037 Y=41.463 Z=1.646[0m
+[0;32mI (12583) icm42670 test: GYRO [˚/s]: X=1.280 Y=51.280 Z=-5.488[0m
+[0;32mI (12683) icm42670 test: GYRO [˚/s]: X=-0.244 Y=80.244 Z=8.415[0m
+[0;32mI (12783) icm42670 test: GYRO [˚/s]: X=-0.854 Y=60.732 Z=1.890[0m
+[0;32mI (12883) icm42670 test: GYRO [˚/s]: X=0.000 Y=31.829 Z=0.305[0m
+[0;32mI (12983) icm42670 test: GYRO [˚/s]: X=0.244 Y=21.646 Z=-0.610[0m
+[0;32mI (13083) icm42670 test: GYRO [˚/s]: X=0.488 Y=-11.890 Z=-1.098[0m
+[0;32mI (13183) icm42670 test: GYRO [˚/s]: X=0.915 Y=-229.939 Z=-7.927[0m
+[0;32mI (13283) icm42670 test: GYRO [˚/s]: X=1.098 Y=-0.488 Z=-0.610[0m
+[0;32mI (13383) icm42670 test: GYRO [˚/s]: X=10.671 Y=-12.134 Z=-0.976[0m
+[0;32mI (13483) icm42670 test: GYRO [˚/s]: X=-0.061 Y=-61.098 Z=-4.695[0m
+[0;32mI (13583) icm42670 test: GYRO [˚/s]: X=-0.244 Y=-64.268 Z=-1.951[0m
+[0;32mI (13683) icm42670 test: GYRO [˚/s]: X=-0.366 Y=-54.268 Z=-2.378[0m
+[0;32mI (13783) icm42670 test: GYRO [˚/s]: X=0.305 Y=-62.012 Z=-2.317[0m
+[0;32mI (13883) icm42670 test: GYRO [˚/s]: X=-0.732 Y=-13.537 Z=-1.951[0m
+[0;32mI (13983) icm42670 test: GYRO [˚/s]: X=0.488 Y=-5.183 Z=-0.305[0m
+[0;32mI (14083) icm42670 test: GYRO [˚/s]: X=0.549 Y=1.098 Z=-0.549[0m
+[0;32mI (14183) icm42670 test: GYRO [˚/s]: X=1.159 Y=4.817 Z=-0.061[0m
+[0;32mI (14283) icm42670 test: GYRO [˚/s]: X=1.707 Y=17.012 Z=1.402[0m
+[0;32mI (14383) icm42670 test: GYRO [˚/s]: X=15.244 Y=198.171 Z=-5.427[0m
+[0;32mI (14483) icm42670 test: GYRO [˚/s]: X=1.463 Y=75.854 Z=5.244[0m
+[0;32mI (14583) icm42670 test: GYRO [˚/s]: X=-7.805 Y=9.390 Z=-1.585[0m
+[0;32mI (14683) icm42670 test: GYRO [˚/s]: X=0.305 Y=0.244 Z=-5.610[0m
+[0;32mI (14783) icm42670 test: GYRO [˚/s]: X=1.159 Y=110.427 Z=12.561[0m
+[0;32mI (14883) icm42670 test: GYRO [˚/s]: X=-0.244 Y=73.780 Z=2.683[0m
+[0;32mI (14983) icm42670 test: GYRO [˚/s]: X=4.634 Y=138.598 Z=-3.780[0m
+[0;32mI (15083) icm42670 test: GYRO [˚/s]: X=0.549 Y=22.683 Z=-1.220[0m
+[0;32mI (15183) icm42670 test: GYRO [˚/s]: X=0.793 Y=12.744 Z=-1.463[0m
+[0;32mI (15283) icm42670 test: GYRO [˚/s]: X=0.366 Y=3.415 Z=-0.549[0m
+[0;32mI (15383) icm42670 test: GYRO [˚/s]: X=-0.244 Y=7.439 Z=0.427[0m
+[0;32mI (15483) icm42670 test: GYRO [˚/s]: X=0.366 Y=-4.329 Z=-1.098[0m
+[0;32mI (15583) icm42670 test: GYRO [˚/s]: X=1.585 Y=-36.585 Z=-3.232[0m
+[0;32mI (15683) icm42670 test: GYRO [˚/s]: X=3.841 Y=-205.305 Z=-13.659[0m
+[0;32mI (15783) icm42670 test: GYRO [˚/s]: X=0.854 Y=-0.366 Z=-1.159[0m
+[0;32mI (15883) icm42670 test: GYRO [˚/s]: X=0.488 Y=0.183 Z=-0.610[0m
+[0;32mI (15983) icm42670 test: GYRO [˚/s]: X=0.427 Y=0.244 Z=-0.793[0m
+[0;32mI (16083) icm42670 test: GYRO [˚/s]: X=13.537 Y=-14.817 Z=0.183[0m
+[0;32mI (16183) icm42670 test: GYRO [˚/s]: X=1.890 Y=-86.463 Z=-1.585[0m
+[0;32mI (16283) icm42670 test: GYRO [˚/s]: X=-0.183 Y=-60.671 Z=-0.305[0m
+[0;32mI (16383) icm42670 test: GYRO [˚/s]: X=-5.488 Y=-63.232 Z=0.549[0m
+[0;32mI (16483) icm42670 test: GYRO [˚/s]: X=1.037 Y=-44.878 Z=-1.280[0m
+[0;32mI (16583) icm42670 test: GYRO [˚/s]: X=-0.061 Y=-9.695 Z=-1.159[0m
+[0;32mI (16683) icm42670 test: GYRO [˚/s]: X=-1.402 Y=-8.171 Z=-0.549[0m
+[0;32mI (16783) icm42670 test: GYRO [˚/s]: X=0.488 Y=-9.085 Z=-1.159[0m
+[0;32mI (16883) icm42670 test: GYRO [˚/s]: X=0.671 Y=3.049 Z=-0.366[0m
+[0;32mI (16983) icm42670 test: GYRO [˚/s]: X=2.622 Y=23.171 Z=2.683[0m
+[0;32mI (17083) icm42670 test: GYRO [˚/s]: X=3.720 Y=51.402 Z=6.463[0m
+[0;32mI (17183) icm42670 test: GYRO [˚/s]: X=5.671 Y=272.439 Z=0.732[0m
+[0;32mI (17283) icm42670 test: GYRO [˚/s]: X=-11.829 Y=9.878 Z=1.768[0m
+[0;32mI (17383) icm42670 test: GYRO [˚/s]: X=0.305 Y=0.427 Z=-0.610[0m
+[0;32mI (17483) icm42670 test: GYRO [˚/s]: X=0.427 Y=0.244 Z=-0.610[0m
+[0;32mI (17583) icm42670 test: GYRO [˚/s]: X=0.488 Y=0.244 Z=-0.366[0m
+[0;32mI (17683) icm42670 test: GYRO [˚/s]: X=0.488 Y=0.305 Z=-0.427[0m
+[0;32mI (17783) icm42670 test: GYRO [˚/s]: X=0.427 Y=0.122 Z=-0.793[0m
+[0;32mI (17883) icm42670 test: GYRO [˚/s]: X=0.427 Y=0.183 Z=-0.732[0m
+[0;32mI (17983) icm42670 test: GYRO [˚/s]: X=0.427 Y=0.183 Z=-0.732[0m
+[0;32mI (18083) icm42670 test: GYRO [˚/s]: X=0.366 Y=0.244 Z=-0.671[0m
+[0;32mI (18183) icm42670 test: GYRO [˚/s]: X=0.488 Y=0.244 Z=-0.793[0m
+[0;32mI (18283) icm42670 test: GYRO [˚/s]: X=0.366 Y=0.183 Z=-0.732[0m
+[0;32mI (18383) icm42670 test: GYRO [˚/s]: X=0.427 Y=0.244 Z=-0.976[0m
+[0;32mI (18483) icm42670 test: GYRO [˚/s]: X=0.244 Y=0.305 Z=-1.159[0m
+[0;32mI (18583) icm42670 test: GYRO [˚/s]: X=0.488 Y=0.122 Z=-0.732[0m
+[0;32mI (18683) icm42670 test: GYRO [˚/s]: X=0.549 Y=0.183 Z=-0.793[0m
+[0;32mI (18783) icm42670 test: GYRO [˚/s]: X=0.366 Y=0.244 Z=-0.549[0m
+[0;32mI (18883) icm42670 test: GYRO [˚/s]: X=0.366 Y=0.244 Z=-0.793[0m
+[0;32mI (18983) icm42670 test: GYRO [˚/s]: X=0.366 Y=0.244 Z=-0.854[0m
+[0;32mI (19083) icm42670 test: GYRO [˚/s]: X=0.427 Y=0.244 Z=-1.037[0m
+[0;32mI (19183) icm42670 test: GYRO [˚/s]: X=0.366 Y=0.183 Z=-0.610[0m
+[0;32mI (19283) icm42670 test: GYRO [˚/s]: X=0.427 Y=0.183 Z=-0.549[0m
+[0;32mI (19383) icm42670 test: GYRO [˚/s]: X=0.427 Y=0.183 Z=-0.732[0m
+[0;32mI (19483) icm42670 test: GYRO [˚/s]: X=0.427 Y=0.305 Z=-5.183[0m
+[0;32mI (19583) icm42670 test: GYRO [˚/s]: X=0.488 Y=0.305 Z=-0.976[0m
+[0;32mI (19683) icm42670 test: GYRO [˚/s]: X=0.366 Y=0.122 Z=-0.915[0m
+[0;32mI (19783) icm42670 test: GYRO [˚/s]: X=0.366 Y=0.305 Z=-0.915[0m
+[0;32mI (19883) icm42670 test: GYRO [˚/s]: X=0.366 Y=0.183 Z=-5.671[0m
+[0;32mI (19983) icm42670 test: GYRO [˚/s]: X=0.366 Y=0.488 Z=-1.463[0m
+[0;32mI (20083) icm42670 test: GYRO [˚/s]: X=-0.183 Y=43.659 Z=-4.878[0m
+[0;32mI (20183) icm42670 test: GYRO [˚/s]: X=0.976 Y=47.683 Z=-0.244[0m
+[0;32mI (20283) icm42670 test: GYRO [˚/s]: X=0.976 Y=89.024 Z=-0.976[0m
+[0;32mI (20383) icm42670 test: GYRO [˚/s]: X=0.732 Y=37.866 Z=-2.134[0m
+[0;32mI (20483) icm42670 test: GYRO [˚/s]: X=0.427 Y=48.354 Z=-0.732[0m
+[0;32mI (20583) icm42670 test: GYRO [˚/s]: X=0.305 Y=-6.220 Z=-0.976[0m
+[0;32mI (20683) icm42670 test: GYRO [˚/s]: X=4.085 Y=-153.232 Z=-9.146[0m
+[0;32mI (20783) icm42670 test: GYRO [˚/s]: X=1.829 Y=-1.524 Z=3.902[0m
+[0;32mI (20883) icm42670 test: GYRO [˚/s]: X=0.427 Y=0.183 Z=-0.427[0m
+[0;32mI (20983) icm42670 test: GYRO [˚/s]: X=0.427 Y=0.244 Z=-0.549[0m
+[0;32mI (21083) icm42670 test: GYRO [˚/s]: X=0.427 Y=0.305 Z=-0.610[0m
+[0;32mI (21183) icm42670 test: GYRO [˚/s]: X=0.305 Y=0.244 Z=-0.549[0m
+[0;32mI (21283) icm42670 test: GYRO [˚/s]: X=0.366 Y=0.244 Z=-0.549[0m
+[0;32mI (21383) icm42670 test: GYRO [˚/s]: X=0.427 Y=0.305 Z=-0.122[0m
+[0;32mI (21483) icm42670 test: GYRO [˚/s]: X=0.366 Y=0.244 Z=0.000[0m
+[0;32mI (21583) icm42670 test: GYRO [˚/s]: X=0.488 Y=0.183 Z=0.000[0m
+[0;32mI (21683) icm42670 test: GYRO [˚/s]: X=0.488 Y=0.244 Z=0.305[0m
+[0;32mI (21783) icm42670 test: GYRO [˚/s]: X=0.427 Y=0.244 Z=-0.488[0m
+[0;32mI (21883) icm42670 test: GYRO [˚/s]: X=0.366 Y=0.244 Z=-0.183[0m
+[0;32mI (21983) icm42670 test: GYRO [˚/s]: X=0.488 Y=0.000 Z=-0.244[0m
+[0;32mI (22083) icm42670 test: GYRO [˚/s]: X=0.366 Y=-0.366 Z=4.451[0m
+[0;32mI (22183) icm42670 test: GYRO [˚/s]: X=0.366 Y=-39.817 Z=-0.610[0m
+[0;32mI (22283) icm42670 test: GYRO [˚/s]: X=1.220 Y=-59.634 Z=2.439[0m
+[0;32mI (22383) icm42670 test: GYRO [˚/s]: X=-0.061 Y=-31.098 Z=-2.378[0m
+[0;32mI (22483) icm42670 test: GYRO [˚/s]: X=-0.122 Y=-73.293 Z=-4.512[0m
+[0;32mI (22583) icm42670 test: GYRO [˚/s]: X=0.183 Y=-5.671 Z=-2.012[0m
+[0;32mI (22683) icm42670 test: GYRO [˚/s]: X=4.817 Y=58.841 Z=-1.463[0m
+[0;32mI (22783) icm42670 test: GYRO [˚/s]: X=-2.256 Y=99.268 Z=0.488[0m
+[0;32mI (22883) icm42670 test: GYRO [˚/s]: X=0.244 Y=0.488 Z=-1.341[0m
+[0;32mI (22983) icm42670 test: GYRO [˚/s]: X=0.427 Y=0.183 Z=-1.707[0m
+[0;32mI (23083) icm42670 test: GYRO [˚/s]: X=0.427 Y=0.366 Z=-1.280[0m
+[0;32mI (23183) icm42670 test: GYRO [˚/s]: X=-0.488 Y=0.854 Z=-11.098[0m
+[0;32mI (23283) icm42670 test: GYRO [˚/s]: X=16.524 Y=-21.646 Z=-0.366[0m
+[0;32mI (23383) icm42670 test: GYRO [˚/s]: X=3.659 Y=11.098 Z=25.854[0m
+[0;32mI (23483) icm42670 test: GYRO [˚/s]: X=6.890 Y=-1.341 Z=4.817[0m
+[0;32mI (23583) icm42670 test: GYRO [˚/s]: X=12.012 Y=1.280 Z=10.366[0m
+[0;32mI (23683) icm42670 test: GYRO [˚/s]: X=1.829 Y=0.244 Z=-0.183[0m
+[0;32mI (23783) icm42670 test: GYRO [˚/s]: X=1.402 Y=0.305 Z=-0.122[0m
+[0;32mI (23883) icm42670 test: GYRO [˚/s]: X=1.037 Y=0.366 Z=-0.488[0m
+[0;32mI (23983) icm42670 test: GYRO [˚/s]: X=1.341 Y=0.305 Z=0.244[0m
+[0;32mI (24083) icm42670 test: GYRO [˚/s]: X=0.793 Y=0.244 Z=-0.671[0m
+[0;32mI (24183) icm42670 test: GYRO [˚/s]: X=0.793 Y=0.427 Z=-0.244[0m
+[0;32mI (24283) icm42670 test: GYRO [˚/s]: X=0.854 Y=0.244 Z=-0.488[0m
+[0;32mI (24383) icm42670 test: GYRO [˚/s]: X=0.610 Y=0.427 Z=-0.244[0m

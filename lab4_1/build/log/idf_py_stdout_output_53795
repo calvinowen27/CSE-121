@@ -1,0 +1,188 @@
+Command: /Users/calvin/.espressif/python_env/idf5.5_py3.13_env/bin/python /Users/calvin/esp/esp-idf/tools/idf_monitor.py -p /dev/cu.usbmodem101 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --revision 3 --decode-panic backtrace /Users/calvin/esp/lab4_1/build/lab4_1.elf /Users/calvin/esp/lab4_1/build/bootloader/bootloader.elf -m '/Users/calvin/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/Users/calvin/esp/esp-idf/tools/idf.py'
+[0;32mI (247) sleep_gpio: Configure to isolate all GPIO pins iESP-ROM:esp32c3-api1-20210207[0m
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xf (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4004c0d6
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x15b0
+load:0x403cbf10,len:0xc34
+load:0x403ce710,len:0x2fe8
+entry 0x403cbf1a
+[0;32mI (24) boot: ESP-IDF v5.5-dev-2916-g1c468f6825 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time May  2 2025 13:41:44[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (26) boot: efuse block revision: v1.3[0m
+[0;32mI (30) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (34) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (45) boot: Partition Table:[0m
+[0;32mI (48) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (54) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (61) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (67) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (74) boot: End of partition table[0m
+[0;32mI (77) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0a4c8h ( 42184) map[0m
+[0;32mI (91) esp_image: segment 1: paddr=0001a4f0 vaddr=3fc8c000 size=012b0h (  4784) load[0m
+[0;32mI (93) esp_image: segment 2: paddr=0001b7a8 vaddr=40380000 size=04870h ( 18544) load[0m
+[0;32mI (103) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1b8c4h (112836) map[0m
+[0;32mI (125) esp_image: segment 4: paddr=0003b8ec vaddr=40384870 size=07718h ( 30488) load[0m
+[0;32mI (131) esp_image: segment 5: paddr=0004300c vaddr=50000000 size=0001ch (    28) load[0m
+[0;32mI (135) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (135) boot: Disabling RNG early entropy source...[0m
+[0;32mI (150) cpu_start: Unicore app[0m
+[0;32mI (159) cpu_start: Pro cpu start user code[0m
+[0;32mI (159) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (159) app_init: Application information:[0m
+[0;32mI (159) app_init: Project name:     lab4_1[0m
+[0;32mI (163) app_init: App version:      1[0m
+[0;32mI (166) app_init: Compile time:     May  2 2025 13:41:38[0m
+[0;32mI (171) app_init: ELF file SHA256:  5e13ede65...[0m
+[0;32mI (175) app_init: ESP-IDF:          v5.5-dev-2916-g1c468f6825[0m
+[0;32mI (181) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (185) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (189) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (193) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (199) heap_init: At 3FC8E2E0 len 00031D20 (199 KiB): RAM[0m
+[0;32mI (204) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (210) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (216) heap_init: At 5000001C len 00001FCC (7 KiB): RTCRAM[0m
+[0;32mI (222) spi_flash: detected chip: generic[0m
+[0;32mI (225) spi_flash: flash io: dio[0m
+[0;33mW (228) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (240) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (246) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (253) main_task: Started on CPU0[0m
+[0;32mI (253) main_task: Calling app_main()[0m
+[0;32mI (253) icm42670 test: I2C bus initialized successfully[0m
+[0;32mI (263) icm42670 test: ICM42670 sensor created[0m
+[0;32mI (273) icm42670 test: ICM42670 sensor initialized successfully[0m
+[0;32mI (273) icm42670 test: Powering ICM42670 accelerometer on[0m
+[0;32mI (273) icm42670 test: Accelerometer ready[0m
+[0;32mI (273) icm42670 test: Powering ICM42670 gyroscope on[0m
+[0;32mI (283) icm42670 test: Gyroscope ready[0m
+[0;32mI (383) icm42670 test: [0m
+[0;32mI (483) icm42670 test: [0m
+[0;32mI (583) icm42670 test: [0m
+[0;32mI (683) icm42670 test: [0m
+[0;32mI (783) icm42670 test: [0m
+[0;32mI (883) icm42670 test: [0m
+[0;32mI (983) icm42670 test: [0m
+[0;32mI (1083) icm42670 test: [0m
+[0;32mI (1183) icm42670 test: UP [0m
+[0;32mI (1283) icm42670 test: UP [0m
+[0;32mI (1383) icm42670 test: UP [0m
+[0;32mI (1483) icm42670 test: UP [0m
+[0;32mI (1583) icm42670 test: UP [0m
+[0;32mI (1683) icm42670 test: UP [0m
+[0;32mI (1783) icm42670 test: [0m
+[0;32mI (1883) icm42670 test: [0m
+[0;32mI (1983) icm42670 test: [0m
+[0;32mI (2083) icm42670 test: [0m
+[0;32mI (2183) icm42670 test: DOWN [0m
+[0;32mI (2283) icm42670 test: DOWN [0m
+[0;32mI (2383) icm42670 test: DOWN [0m
+[0;32mI (2483) icm42670 test: DOWN [0m
+[0;32mI (2583) icm42670 test: DOWN [0m
+[0;32mI (2683) icm42670 test: LEFT[0m
+[0;32mI (2783) icm42670 test: LEFT[0m
+[0;32mI (2883) icm42670 test: LEFT[0m
+[0;32mI (2983) icm42670 test: LEFT[0m
+[0;32mI (3083) icm42670 test: LEFT[0m
+[0;32mI (3183) icm42670 test: [0m
+[0;32mI (3283) icm42670 test: RIGHT[0m
+[0;32mI (3383) icm42670 test: RIGHT[0m
+[0;32mI (3483) icm42670 test: RIGHT[0m
+[0;32mI (3583) icm42670 test: RIGHT[0m
+[0;32mI (3683) icm42670 test: RIGHT[0m
+[0;32mI (3783) icm42670 test: RIGHT[0m
+[0;32mI (3883) icm42670 test: RIGHT[0m
+[0;32mI (3983) icm42670 test: RIGHT[0m
+[0;32mI (4083) icm42670 test: DOWN RIGHT[0m
+[0;32mI (4183) icm42670 test: DOWN RIGHT[0m
+[0;32mI (4283) icm42670 test: DOWN RIGHT[0m
+[0;32mI (4383) icm42670 test: DOWN RIGHT[0m
+[0;32mI (4483) icm42670 test: DOWN RIGHT[0m
+[0;32mI (4583) icm42670 test: DOWN RIGHT[0m
+[0;32mI (4683) icm42670 test: DOWN [0m
+[0;32mI (4783) icm42670 test: DOWN [0m
+[0;32mI (4883) icm42670 test: DOWN LEFT[0m
+[0;32mI (4983) icm42670 test: DOWN LEFT[0m
+[0;32mI (5083) icm42670 test: DOWN LEFT[0m
+[0;32mI (5183) icm42670 test: DOWN LEFT[0m
+[0;32mI (5283) icm42670 test: DOWN LEFT[0m
+[0;32mI (5383) icm42670 test: DOWN LEFT[0m
+[0;32mI (5483) icm42670 test: DOWN LEFT[0m
+[0;32mI (5583) icm42670 test: DOWN LEFT[0m
+[0;32mI (5683) icm42670 test: [0m
+[0;32mI (5783) icm42670 test: [0m
+[0;32mI (5883) icm42670 test: [0m
+[0;32mI (5983) icm42670 test: [0m
+[0;32mI (6083) icm42670 test: [0m
+[0;32mI (6183) icm42670 test: [0m
+[0;32mI (6283) icm42670 test: [0m
+[0;32mI (6383) icm42670 test: [0m
+[0;32mI (6483) icm42670 test: [0m
+[0;32mI (6583) icm42670 test: [0m
+[0;32mI (6683) icm42670 test: RIGHT[0m
+[0;32mI (6783) icm42670 test: RIGHT[0m
+[0;32mI (6883) icm42670 test: RIGHT[0m
+[0;32mI (6983) icm42670 test: RIGHT[0m
+[0;32mI (7083) icm42670 test: RIGHT[0m
+[0;32mI (7183) icm42670 test: RIGHT[0m
+[0;32mI (7283) icm42670 test: RIGHT[0m
+[0;32mI (7383) icm42670 test: RIGHT[0m
+[0;32mI (7483) icm42670 test: RIGHT[0m
+[0;32mI (7583) icm42670 test: RIGHT[0m
+[0;32mI (7683) icm42670 test: RIGHT[0m
+[0;32mI (7783) icm42670 test: RIGHT[0m
+[0;32mI (7883) icm42670 test: RIGHT[0m
+[0;32mI (7983) icm42670 test: [0m
+[0;32mI (8083) icm42670 test: UP [0m
+[0;32mI (8183) icm42670 test: UP [0m
+[0;32mI (8283) icm42670 test: UP [0m
+[0;32mI (8383) icm42670 test: UP [0m
+[0;32mI (8483) icm42670 test: UP [0m
+[0;32mI (8583) icm42670 test: UP [0m
+[0;32mI (8683) icm42670 test: UP [0m
+[0;32mI (8783) icm42670 test: UP [0m
+[0;32mI (8883) icm42670 test: UP [0m
+[0;32mI (8983) icm42670 test: UP LEFT[0m
+[0;32mI (9083) icm42670 test: UP LEFT[0m
+[0;32mI (9183) icm42670 test: UP LEFT[0m
+[0;32mI (9283) icm42670 test: UP LEFT[0m
+[0;32mI (9383) icm42670 test: UP LEFT[0m
+[0;32mI (9483) icm42670 test: UP LEFT[0m
+[0;32mI (9583) icm42670 test: UP RIGHT[0m
+[0;32mI (9683) icm42670 test: UP RIGHT[0m
+[0;32mI (9783) icm42670 test: UP RIGHT[0m
+[0;32mI (9883) icm42670 test: UP RIGHT[0m
+[0;32mI (9983) icm42670 test: UP RIGHT[0m
+[0;32mI (10083) icm42670 test: UP RIGHT[0m
+[0;32mI (10183) icm42670 test: UP RIGHT[0m
+[0;32mI (10283) icm42670 test: UP [0m
+[0;32mI (10383) icm42670 test: [0m
+[0;32mI (10483) icm42670 test: [0m
+[0;32mI (10583) icm42670 test: [0m
+[0;32mI (10683) icm42670 test: [0m
+[0;32mI (10783) icm42670 test: [0m
+[0;32mI (10883) icm42670 test: [0m
+[0;32mI (10983) icm42670 test: [0m
+[0;32mI (11083) icm42670 test: RIGHT[0m
+[0;32mI (11183) icm42670 test: RIGHT[0m
+[0;32mI (11283) icm42670 test: RIGHT[0m
+[0;32mI (11383) icm42670 test: RIGHT[0m
+[0;32mI (11483) icm42670 test: UP RIGHT[0m
+[0;32mI (11583) icm42670 test: [0m
+[0;32mI (11683) icm42670 test: [0m
+[0;32mI (11783) icm42670 test: [0m
+[0;32mI (11883) icm42670 test: [0m
+[0;32mI (11983) icm42670 test: [0m
+[0;32mI (12083) icm42670 test: [0m
+[0;32mI (12183) icm42670 test: [0m
+[0;32mI (12283) icm42670 test: [0m
+[0;32mI (12383) icm42670 test: [0m
+[0;32mI (12483) icm42670 test: [0m
+[0;32mI (12583) icm42670 test: [0m
+[0;32mI (12683) icm42670 test: [0m

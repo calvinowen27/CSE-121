@@ -1,0 +1,14 @@
+/Users/calvin/esp/lab2/build/CMakeFiles/menuconfig.dir
+/Users/calvin/esp/lab2/build/CMakeFiles/confserver.dir
+/Users/calvin/esp/lab2/build/CMakeFiles/save-defconfig.dir
+/Users/calvin/esp/lab2/build/CMakeFiles/_project_elf_src.dir
+/Users/calvin/esp/lab2/build/CMakeFiles/lab2.elf.dir
+/Users/calvin/esp/lab2/build/CMakeFiles/size.dir
+/Users/calvin/esp/lab2/build/CMakeFiles/size-files.dir
+/Users/calvin/esp/lab2/build/CMakeFiles/size-components.dir
+/Users/calvin/esp/lab2/build/CMakeFiles/uf2.dir
+/Users/calvin/esp/lab2/build/CMakeFiles/uf2-app.dir
+/Users/calvin/esp/lab2/build/CMakeFiles/edit_cache.dir
+/Users/calvin/esp/lab2/build/CMakeFiles/rebuild_cache.dir
+/Users/calvin/esp/lab2/build/esp-idf/CMakeFiles/edit_cache.dir
+/Users/calvin/esp/lab2/build/esp-idf/CMakeFiles/rebuild_cache.dir

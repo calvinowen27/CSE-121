@@ -1,0 +1,332 @@
+Command: /Users/calvin/.espressif/python_env/idf5.5_py3.13_env/bin/python /Users/calvin/esp/esp-idf/tools/idf_monitor.py -p /dev/cu.usbmodem101 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --revision 3 --decode-panic backtrace /Users/calvin/esp/lab4_1/build/lab4_1.elf /Users/calvin/esp/lab4_1/build/bootloader/bootloader.elf -m '/Users/calvin/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/Users/calvin/esp/esp-idf/tools/idf.py'
+ge header.
+[0;32mI (245) sleep_gpio: ConfESP-ROM:esp32c3-api1-20210207[0m
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xf (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4004c0d8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x15b0
+load:0x403cbf10,len:0xc34
+load:0x403ce710,len:0x2fe8
+entry 0x403cbf1a
+[0;32mI (24) boot: ESP-IDF v5.5-dev-2916-g1c468f6825 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time May  2 2025 13:41:44[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (26) boot: efuse block revision: v1.3[0m
+[0;32mI (30) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (34) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (45) boot: Partition Table:[0m
+[0;32mI (48) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (54) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (61) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (67) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (74) boot: End of partition table[0m
+[0;32mI (77) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0a460h ( 42080) map[0m
+[0;32mI (91) esp_image: segment 1: paddr=0001a488 vaddr=3fc8c000 size=012b0h (  4784) load[0m
+[0;32mI (93) esp_image: segment 2: paddr=0001b740 vaddr=40380000 size=048d8h ( 18648) load[0m
+[0;32mI (103) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1b00ch (110604) map[0m
+[0;32mI (125) esp_image: segment 4: paddr=0003b034 vaddr=403848d8 size=076b0h ( 30384) load[0m
+[0;32mI (130) esp_image: segment 5: paddr=000426ec vaddr=50000000 size=0001ch (    28) load[0m
+[0;32mI (134) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (135) boot: Disabling RNG early entropy source...[0m
+[0;32mI (150) cpu_start: Unicore app[0m
+[0;32mI (158) cpu_start: Pro cpu start user code[0m
+[0;32mI (158) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (158) app_init: Application information:[0m
+[0;32mI (159) app_init: Project name:     lab4_1[0m
+[0;32mI (162) app_init: App version:      1[0m
+[0;32mI (166) app_init: Compile time:     May  2 2025 13:41:38[0m
+[0;32mI (171) app_init: ELF file SHA256:  03a65c0b4...[0m
+[0;32mI (175) app_init: ESP-IDF:          v5.5-dev-2916-g1c468f6825[0m
+[0;32mI (180) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (184) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (188) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (192) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (198) heap_init: At 3FC8E2E0 len 00031D20 (199 KiB): RAM[0m
+[0;32mI (204) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (210) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (216) heap_init: At 5000001C len 00001FCC (7 KiB): RTCRAM[0m
+[0;32mI (222) spi_flash: detected chip: generic[0m
+[0;32mI (225) spi_flash: flash io: dio[0m
+[0;33mW (228) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (240) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (246) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (253) main_task: Started on CPU0[0m
+[0;32mI (253) main_task: Calling app_main()[0m
+[0;32mI (253) icm42670 test: I2C bus initialized successfully[0m
+[0;32mI (263) icm42670 test: ICM42670 sensor created[0m
+[0;32mI (273) icm42670 test: ICM42670 sensor initialized successfully[0m
+[0;32mI (273) icm42670 test: Powering ICM42670 accelerometer on[0m
+[0;32mI (273) icm42670 test: Accelerometer ready[0m
+[0;32mI (283) icm42670 test: Powering ICM42670 gyroscope on[0m
+[0;32mI (283) icm42670 test: Gyroscope ready[0m
+[0;32mI (383) icm42670 test: ACCE [g]: X=0.006 Y=0.002 Z=1.021[0m
+[0;32mI (383) icm42670 test: GYRO [˚/s]: X=0.427 Y=0.122 Z=-0.671[0m
+[0;32mI (483) icm42670 test: ACCE [g]: X=0.004 Y=0.001 Z=1.022[0m
+[0;32mI (483) icm42670 test: GYRO [˚/s]: X=0.427 Y=0.244 Z=-0.549[0m
+[0;32mI (583) icm42670 test: ACCE [g]: X=0.005 Y=0.001 Z=1.021[0m
+[0;32mI (583) icm42670 test: GYRO [˚/s]: X=0.488 Y=0.183 Z=-0.732[0m
+[0;32mI (683) icm42670 test: ACCE [g]: X=0.004 Y=0.000 Z=1.021[0m
+[0;32mI (683) icm42670 test: GYRO [˚/s]: X=0.549 Y=0.305 Z=-0.671[0m
+[0;32mI (783) icm42670 test: ACCE [g]: X=0.006 Y=0.000 Z=1.022[0m
+[0;32mI (783) icm42670 test: GYRO [˚/s]: X=0.366 Y=0.183 Z=-0.549[0m
+[0;32mI (883) icm42670 test: ACCE [g]: X=0.004 Y=0.003 Z=1.023[0m
+[0;32mI (883) icm42670 test: GYRO [˚/s]: X=0.366 Y=0.305 Z=-0.793[0m
+[0;32mI (983) icm42670 test: ACCE [g]: X=0.003 Y=0.000 Z=1.023[0m
+[0;32mI (983) icm42670 test: GYRO [˚/s]: X=0.549 Y=0.183 Z=-0.671[0m
+[0;32mI (1083) icm42670 test: ACCE [g]: X=0.004 Y=0.003 Z=1.019[0m
+[0;32mI (1083) icm42670 test: GYRO [˚/s]: X=0.427 Y=0.122 Z=-0.671[0m
+[0;32mI (1183) icm42670 test: ACCE [g]: X=0.006 Y=0.002 Z=1.023[0m
+[0;32mI (1183) icm42670 test: GYRO [˚/s]: X=0.427 Y=0.244 Z=-0.488[0m
+[0;32mI (1283) icm42670 test: ACCE [g]: X=0.002 Y=0.003 Z=1.020[0m
+[0;32mI (1283) icm42670 test: GYRO [˚/s]: X=0.427 Y=0.244 Z=-0.732[0m
+[0;32mI (1383) icm42670 test: ACCE [g]: X=0.003 Y=-0.000 Z=1.021[0m
+[0;32mI (1383) icm42670 test: GYRO [˚/s]: X=0.366 Y=0.305 Z=-0.732[0m
+[0;32mI (1483) icm42670 test: ACCE [g]: X=0.004 Y=0.002 Z=1.022[0m
+[0;32mI (1483) icm42670 test: GYRO [˚/s]: X=0.305 Y=0.244 Z=-0.732[0m
+[0;32mI (1583) icm42670 test: ACCE [g]: X=0.004 Y=0.001 Z=1.020[0m
+[0;32mI (1583) icm42670 test: GYRO [˚/s]: X=0.427 Y=0.305 Z=-0.549[0m
+[0;32mI (1683) icm42670 test: ACCE [g]: X=0.004 Y=0.001 Z=1.022[0m
+[0;32mI (1683) icm42670 test: GYRO [˚/s]: X=0.488 Y=0.244 Z=-0.488[0m
+[0;32mI (1783) icm42670 test: ACCE [g]: X=0.004 Y=0.001 Z=1.022[0m
+[0;32mI (1783) icm42670 test: GYRO [˚/s]: X=0.427 Y=0.183 Z=-0.854[0m
+[0;32mI (1883) icm42670 test: ACCE [g]: X=0.004 Y=0.003 Z=1.022[0m
+[0;32mI (1883) icm42670 test: GYRO [˚/s]: X=0.427 Y=0.183 Z=-0.793[0m
+[0;32mI (1983) icm42670 test: ACCE [g]: X=0.004 Y=0.001 Z=1.022[0m
+[0;32mI (1983) icm42670 test: GYRO [˚/s]: X=0.366 Y=0.122 Z=-0.793[0m
+[0;32mI (2083) icm42670 test: ACCE [g]: X=-0.000 Y=-0.015 Z=1.025[0m
+[0;32mI (2083) icm42670 test: GYRO [˚/s]: X=0.976 Y=-1.341 Z=-2.317[0m
+[0;32mI (2183) icm42670 test: ACCE [g]: X=0.115 Y=0.014 Z=1.012[0m
+[0;32mI (2183) icm42670 test: GYRO [˚/s]: X=-0.793 Y=-96.220 Z=-2.683[0m
+[0;32mI (2283) icm42670 test: ACCE [g]: X=0.259 Y=-0.008 Z=1.044[0m
+[0;32mI (2283) icm42670 test: GYRO [˚/s]: X=-5.976 Y=-81.890 Z=0.000[0m
+[0;32mI (2383) icm42670 test: ACCE [g]: X=0.399 Y=-0.031 Z=-0.000[0m
+[0;32mI (2383) icm42670 test: GYRO [˚/s]: X=-17.683 Y=-65.793 Z=-1.402[0m
+[0;32mI (2483) icm42670 test: ACCE [g]: X=0.518 Y=-0.041 Z=0.859[0m
+[0;32mI (2483) icm42670 test: GYRO [˚/s]: X=-18.171 Y=-119.268 Z=-14.329[0m
+[0;32mI (2583) icm42670 test: ACCE [g]: X=0.671 Y=-0.055 Z=0.724[0m
+[0;32mI (2583) icm42670 test: GYRO [˚/s]: X=-6.463 Y=-103.659 Z=-12.500[0m
+[0;32mI (2683) icm42670 test: ACCE [g]: X=0.787 Y=-0.039 Z=0.623[0m
+[0;32mI (2683) icm42670 test: GYRO [˚/s]: X=-1.768 Y=-60.061 Z=-11.159[0m
+[0;32mI (2783) icm42670 test: ACCE [g]: X=0.815 Y=-0.030 Z=0.539[0m
+[0;32mI (2783) icm42670 test: GYRO [˚/s]: X=-0.183 Y=-38.841 Z=-7.744[0m
+[0;32mI (2883) icm42670 test: ACCE [g]: X=0.853 Y=-0.012 Z=0.495[0m
+[0;32mI (2883) icm42670 test: GYRO [˚/s]: X=-1.951 Y=-19.207 Z=-1.646[0m
+[0;32mI (2983) icm42670 test: ACCE [g]: X=0.893 Y=-0.005 Z=0.500[0m
+[0;32mI (2983) icm42670 test: GYRO [˚/s]: X=1.280 Y=2.073 Z=-0.671[0m
+[0;32mI (3083) icm42670 test: ACCE [g]: X=0.876 Y=-0.008 Z=0.510[0m
+[0;32mI (3083) icm42670 test: GYRO [˚/s]: X=2.256 Y=9.207 Z=-0.305[0m
+[0;32mI (3183) icm42670 test: ACCE [g]: X=0.857 Y=-0.020 Z=0.555[0m
+[0;32mI (3183) icm42670 test: GYRO [˚/s]: X=7.195 Y=50.549 Z=5.183[0m
+[0;32mI (3283) icm42670 test: ACCE [g]: X=0.676 Y=-0.013 Z=0.709[0m
+[0;32mI (3283) icm42670 test: GYRO [˚/s]: X=18.963 Y=200.000 Z=11.098[0m
+[0;32mI (3383) icm42670 test: ACCE [g]: X=0.494 Y=0.014 Z=0.886[0m
+[0;32mI (3383) icm42670 test: GYRO [˚/s]: X=15.976 Y=115.305 Z=0.305[0m
+[0;32mI (3483) icm42670 test: ACCE [g]: X=0.311 Y=0.041 Z=0.975[0m
+[0;32mI (3483) icm42670 test: GYRO [˚/s]: X=19.146 Y=114.451 Z=-2.561[0m
+[0;32mI (3583) icm42670 test: ACCE [g]: X=0.153 Y=0.055 Z=0.995[0m
+[0;32mI (3583) icm42670 test: GYRO [˚/s]: X=16.220 Y=72.073 Z=0.976[0m
+[0;32mI (3683) icm42670 test: ACCE [g]: X=0.076 Y=0.075 Z=1.017[0m
+[0;32mI (3683) icm42670 test: GYRO [˚/s]: X=9.756 Y=78.415 Z=-0.915[0m
+[0;32mI (3783) icm42670 test: ACCE [g]: X=-0.080 Y=0.089 Z=1.017[0m
+[0;32mI (3783) icm42670 test: GYRO [˚/s]: X=7.073 Y=71.951 Z=-2.805[0m
+[1;31mE (3883) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (3883) i2c.master: s_i2c_synchronous_transaction(935): I2C transaction failed[0m
+[1;31mE (3883) i2c.master: i2c_master_transmit_receive(1238): I2C transaction failed[0m
+[1;31mE (3883) ICM42670: icm42670_get_acce_value(283): Get raw value error![0m
+ESP_ERROR_CHECK failed: esp_err_t 0x103 (ESP_ERR_INVALID_STATE) at 0x42009a0c
+file: "./main/lab4_1.c" line 119
+func: app_main
+expression: icm42670_get_acce_value(icm42670, &acc)
+
+abort() was called at PC 0x40383a41 on core 0
+Core  0 register dump:
+MEPC    : 0x403807b0  RA      : 0x40383a4c  SP      : 0x3fc8fc80  GP      : 0x3fc8c800  
+TP      : 0x3fc8fdc0  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000004  S1      : 0x3fc8fce4  A0      : 0x3fc8fcac  A1      : 0x3fc8fce2  
+A2      : 0x00000000  A3      : 0x3fc8fcd9  A4      : 0x00000001  A5      : 0x3fc8e000  
+A6      : 0x7a797877  A7      : 0x76757473  S2      : 0x00000000  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x401c4aed  S7      : 0x40000000  
+S8      : 0x00000003  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+add symbol table from file "/Users/calvin/esp/lab4_1/build/bootloader/bootloader.elf"
+panic_abort (details=details@entry=0x3fc8fcac "abort() was called at PC 0x40383a41 on core 0") at /Users/calvin/esp/esp-idf/components/esp_system/panic.c:482
+482	    asm("unimp");   // should be an invalid operation on RISC-V targets
+#0  panic_abort (details=details@entry=0x3fc8fcac "abort() was called at PC 0x40383a41 on core 0") at /Users/calvin/esp/esp-idf/components/esp_system/panic.c:482
+#1  0x40383a4c in esp_system_abort (details=details@entry=0x3fc8fcac "abort() was called at PC 0x40383a41 on core 0") at /Users/calvin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+#2  0x4038a268 in abort () at /Users/calvin/esp/esp-idf/components/newlib/src/abort.c:38
+#3  0x40383a44 in _esp_error_check_failed (rc=<optimized out>, file=file@entry=0x3c024ad0 "", line=line@entry=119, function=function@entry=0x3c028b5c <__func__.0> "", expression=expression@entry=0x3c024b84 "") at /Users/calvin/esp/esp-idf/components/esp_system/esp_err.c:49
+#4  0x42009a10 in app_main () at /Users/calvin/esp/lab4_1/main/lab4_1.c:119
+#5  0x4201a5f6 in main_task (args=<error reading variable: value has been optimized out>) at /Users/calvin/esp/esp-idf/components/freertos/app_startup.c:208
+#6  0x403849d4 in vPortTaskWrapper (pxCode=<optimized out>, pvParameters=<optimized out>) at /Users/calvin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:255
+
+
+
+ELF file SHA256: 03a65c0b4
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xf (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40380768
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x15b0
+load:0x403cbf10,len:0xc34
+load:0x403ce710,len:0x2fe8
+entry 0x403cbf1a
+[0;32mI (24) boot: ESP-IDF v5.5-dev-2916-g1c468f6825 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time May  2 2025 13:41:44[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (26) boot: efuse block revision: v1.3[0m
+[0;32mI (29) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (33) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (40) boot: Enabling RNG early entropy source...[0m
+[0;32mI (45) boot: Partition Table:[0m
+[0;32mI (48) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (54) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (60) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (67) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (73) boot: End of partition table[0m
+[0;32mI (77) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0a460h ( 42080) map[0m
+[0;32mI (91) esp_image: segment 1: paddr=0001a488 vaddr=3fc8c000 size=012b0h (  4784) load[0m
+[0;32mI (92) esp_image: segment 2: paddr=0001b740 vaddr=40380000 size=048d8h ( 18648) load[0m
+[0;32mI (102) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1b00ch (110604) map[0m
+[0;32mI (124) esp_image: segment 4: paddr=0003b034 vaddr=403848d8 size=076b0h ( 30384) load[0m
+[0;32mI (130) esp_image: segment 5: paddr=000426ec vaddr=50000000 size=0001ch (    28) load[0m
+[0;32mI (134) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (134) boot: Disabling RNG early entropy source...[0m
+[0;32mI (149) cpu_start: Unicore app[0m
+[0;32mI (158) cpu_start: Pro cpu start user code[0m
+[0;32mI (158) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (158) app_init: Application information:[0m
+[0;32mI (158) app_init: Project name:     lab4_1[0m
+[0;32mI (162) app_init: App version:      1[0m
+[0;32mI (165) app_init: Compile time:     May  2 2025 13:41:38[0m
+[0;32mI (170) app_init: ELF file SHA256:  03a65c0b4...[0m
+[0;32mI (174) app_init: ESP-IDF:          v5.5-dev-2916-g1c468f6825[0m
+[0;32mI (180) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (184) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (188) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (192) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (198) heap_init: At 3FC8E2E0 len 00031D20 (199 KiB): RAM[0m
+[0;32mI (203) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (209) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (215) heap_init: At 5000001C len 00001FCC (7 KiB): RTCRAM[0m
+[0;32mI (221) spi_flash: detected chip: generic[0m
+[0;32mI (224) spi_flash: flash io: dio[0m
+[0;33mW (227) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (239) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (245) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (252) main_task: Started on CPU0[0m
+[0;32mI (252) main_task: Calling app_main()[0m
+[0;32mI (252) icm42670 test: I2C bus initialized successfully[0m
+[0;32mI (262) icm42670 test: ICM42670 sensor created[0m
+[0;32mI (272) icm42670 test: ICM42670 sensor initialized successfully[0m
+[0;32mI (272) icm42670 test: Powering ICM42670 accelerometer on[0m
+[0;32mI (272) icm42670 test: Accelerometer ready[0m
+[0;32mI (282) icm42670 test: Powering ICM42670 gyroscope on[0m
+[0;32mI (282) icm42670 test: Gyroscope ready[0m
+[0;32mI (382) icm42670 test: ACCE [g]: X=-0.412 Y=0.140 Z=0.906[0m
+[0;32mI (382) icm42670 test: GYRO [˚/s]: X=-0.976 Y=-14.817 Z=0.305[0m
+[0;32mI (482) icm42670 test: ACCE [g]: X=-0.330 Y=0.139 Z=0.955[0m
+[0;32mI (482) icm42670 test: GYRO [˚/s]: X=-2.378 Y=-77.866 Z=-1.646[0m
+[0;32mI (582) icm42670 test: ACCE [g]: X=-0.148 Y=0.135 Z=1.026[0m
+[0;32mI (582) icm42670 test: GYRO [˚/s]: X=-0.671 Y=-135.366 Z=-6.098[0m
+[0;32mI (682) icm42670 test: ACCE [g]: X=0.083 Y=0.119 Z=0.999[0m
+[0;32mI (682) icm42670 test: GYRO [˚/s]: X=-2.439 Y=-117.805 Z=0.244[0m
+[0;32mI (782) icm42670 test: ACCE [g]: X=0.305 Y=0.125 Z=0.995[0m
+[0;32mI (782) icm42670 test: GYRO [˚/s]: X=-7.012 Y=-95.061 Z=-3.354[0m
+[0;32mI (882) icm42670 test: ACCE [g]: X=0.452 Y=0.114 Z=0.937[0m
+[0;32mI (882) icm42670 test: GYRO [˚/s]: X=-10.549 Y=-126.098 Z=-4.024[0m
+[0;32mI (982) icm42670 test: ACCE [g]: X=0.621 Y=0.076 Z=0.803[0m
+[0;32mI (982) icm42670 test: GYRO [˚/s]: X=-14.146 Y=-120.000 Z=4.146[0m
+[0;32mI (1082) icm42670 test: ACCE [g]: X=0.740 Y=0.043 Z=0.696[0m
+[0;32mI (1082) icm42670 test: GYRO [˚/s]: X=-2.561 Y=-10.671 Z=3.659[0m
+[0;32mI (1182) icm42670 test: ACCE [g]: X=0.585 Y=0.101 Z=0.851[0m
+[0;32mI (1182) icm42670 test: GYRO [˚/s]: X=17.378 Y=256.220 Z=9.451[0m
+[0;32mI (1282) icm42670 test: ACCE [g]: X=0.156 Y=0.120 Z=0.924[0m
+[0;32mI (1282) icm42670 test: GYRO [˚/s]: X=22.561 Y=232.439 Z=-12.439[0m
+[0;32mI (1382) icm42670 test: ACCE [g]: X=-0.055 Y=0.131 Z=0.998[0m
+[0;32mI (1382) icm42670 test: GYRO [˚/s]: X=-0.854 Y=-67.683 Z=-6.220[0m
+[0;32mI (1482) icm42670 test: ACCE [g]: X=0.142 Y=0.188 Z=1.077[0m
+[0;32mI (1482) icm42670 test: GYRO [˚/s]: X=-32.805 Y=-105.488 Z=-50.183[0m
+[0;32mI (1582) icm42670 test: ACCE [g]: X=0.158 Y=0.088 Z=1.096[0m
+[0;32mI (1582) icm42670 test: GYRO [˚/s]: X=-36.829 Y=-15.427 Z=-13.232[0m
+[0;32mI (1682) icm42670 test: ACCE [g]: X=0.165 Y=-0.066 Z=0.844[0m
+[0;32mI (1682) icm42670 test: GYRO [˚/s]: X=-17.073 Y=-44.024 Z=3.598[0m
+[0;32mI (1782) icm42670 test: ACCE [g]: X=0.308 Y=-0.031 Z=0.913[0m
+[0;32mI (1782) icm42670 test: GYRO [˚/s]: X=4.512 Y=-17.378 Z=3.720[0m
+[0;32mI (1882) icm42670 test: ACCE [g]: X=0.290 Y=0.106 Z=1.133[0m
+[0;32mI (1882) icm42670 test: GYRO [˚/s]: X=43.354 Y=36.951 Z=9.146[0m
+[0;32mI (1982) icm42670 test: ACCE [g]: X=0.185 Y=0.048 Z=0.944[0m
+[0;32mI (1982) icm42670 test: GYRO [˚/s]: X=33.049 Y=17.073 Z=11.707[0m
+[0;32mI (2082) icm42670 test: ACCE [g]: X=0.202 Y=0.088 Z=0.958[0m
+[0;32mI (2082) icm42670 test: GYRO [˚/s]: X=1.646 Y=8.354 Z=1.829[0m
+[0;32mI (2182) icm42670 test: ACCE [g]: X=0.207 Y=0.111 Z=1.000[0m
+[0;32mI (2182) icm42670 test: GYRO [˚/s]: X=-10.671 Y=0.976 Z=1.585[0m
+[0;32mI (2282) icm42670 test: ACCE [g]: X=0.229 Y=0.107 Z=0.899[0m
+[0;32mI (2282) icm42670 test: GYRO [˚/s]: X=40.976 Y=-19.634 Z=6.951[0m
+[0;32mI (2382) icm42670 test: ACCE [g]: X=0.386 Y=0.388 Z=1.434[0m
+[0;32mI (2382) icm42670 test: GYRO [˚/s]: X=-3.476 Y=5.671 Z=4.817[0m
+[0;32mI (2482) icm42670 test: ACCE [g]: X=0.239 Y=0.096 Z=0.771[0m
+[0;32mI (2482) icm42670 test: GYRO [˚/s]: X=-13.902 Y=11.768 Z=14.756[0m
+[0;32mI (2582) icm42670 test: ACCE [g]: X=0.198 Y=0.194 Z=0.953[0m
+[0;32mI (2582) icm42670 test: GYRO [˚/s]: X=-32.927 Y=115.183 Z=3.598[0m
+[0;32mI (2682) icm42670 test: ACCE [g]: X=0.019 Y=0.032 Z=1.000[0m
+[0;32mI (2682) icm42670 test: GYRO [˚/s]: X=0.305 Y=0.061 Z=3.902[0m
+[0;32mI (2782) icm42670 test: ACCE [g]: X=0.011 Y=0.008 Z=1.018[0m
+[0;32mI (2782) icm42670 test: GYRO [˚/s]: X=-0.061 Y=0.610 Z=-0.488[0m
+[0;32mI (2882) icm42670 test: ACCE [g]: X=0.010 Y=0.006 Z=1.020[0m
+[0;32mI (2882) icm42670 test: GYRO [˚/s]: X=-0.122 Y=0.793 Z=-0.793[0m
+[0;32mI (2982) icm42670 test: ACCE [g]: X=0.007 Y=0.006 Z=1.019[0m
+[0;32mI (2982) icm42670 test: GYRO [˚/s]: X=-1.829 Y=2.744 Z=-0.793[0m
+[0;32mI (3082) icm42670 test: ACCE [g]: X=0.004 Y=0.002 Z=1.022[0m
+[0;32mI (3082) icm42670 test: GYRO [˚/s]: X=0.366 Y=0.366 Z=-0.732[0m
+[0;32mI (3182) icm42670 test: ACCE [g]: X=0.005 Y=0.001 Z=1.022[0m
+[0;32mI (3182) icm42670 test: GYRO [˚/s]: X=0.427 Y=0.305 Z=-0.793[0m
+[0;32mI (3282) icm42670 test: ACCE [g]: X=0.004 Y=0.000 Z=1.019[0m
+[0;32mI (3282) icm42670 test: GYRO [˚/s]: X=0.488 Y=0.305 Z=-0.671[0m
+[0;32mI (3382) icm42670 test: ACCE [g]: X=0.003 Y=0.001 Z=1.021[0m
+[0;32mI (3382) icm42670 test: GYRO [˚/s]: X=0.366 Y=0.305 Z=-0.793[0m
+[0;32mI (3482) icm42670 test: ACCE [g]: X=0.005 Y=0.002 Z=1.021[0m
+[0;32mI (3482) icm42670 test: GYRO [˚/s]: X=0.366 Y=0.305 Z=-0.854[0m
+[0;32mI (3582) icm42670 test: ACCE [g]: X=0.004 Y=0.000 Z=1.020[0m
+[0;32mI (3582) icm42670 test: GYRO [˚/s]: X=0.366 Y=0.427 Z=-0.732[0m
+[0;32mI (3682) icm42670 test: ACCE [g]: X=0.004 Y=0.001 Z=1.021[0m
+[0;32mI (3682) icm42670 test: GYRO [˚/s]: X=0.366 Y=0.244 Z=-0.732[0m
+[0;32mI (3782) icm42670 test: ACCE [g]: X=0.057 Y=0.005 Z=1.019[0m
+[0;32mI (3782) icm42670 test: GYRO [˚/s]: X=0.610 Y=-0.244 Z=1.098[0m
+[0;32mI (3882) icm42670 test: ACCE [g]: X=-0.015 Y=-0.021 Z=1.073[0m
+[0;32mI (3882) icm42670 test: GYRO [˚/s]: X=10.488 Y=-6.768 Z=11.463[0m
+[0;32mI (3982) icm42670 test: ACCE [g]: X=0.099 Y=0.054 Z=1.140[0m
+[0;32mI (3982) icm42670 test: GYRO [˚/s]: X=-5.305 Y=0.427 Z=2.500[0m
+[0;32mI (4082) icm42670 test: ACCE [g]: X=0.011 Y=0.056 Z=1.016[0m
+[0;32mI (4082) icm42670 test: GYRO [˚/s]: X=2.012 Y=0.427 Z=0.122[0m
+[0;32mI (4182) icm42670 test: ACCE [g]: X=0.015 Y=0.057 Z=1.018[0m
+[0;32mI (4182) icm42670 test: GYRO [˚/s]: X=1.280 Y=0.366 Z=0.366[0m
+[0;32mI (4282) icm42670 test: ACCE [g]: X=0.014 Y=0.057 Z=1.020[0m
+[0;32mI (4282) icm42670 test: GYRO [˚/s]: X=0.976 Y=0.183 Z=0.061[0m
+[0;32mI (4382) icm42670 test: ACCE [g]: X=0.015 Y=0.059 Z=1.016[0m
+[0;32mI (4382) icm42670 test: GYRO [˚/s]: X=0.671 Y=0.244 Z=-0.305[0m
+[0;32mI (4482) icm42670 test: ACCE [g]: X=0.012 Y=0.058 Z=1.016[0m
+[0;32mI (4482) icm42670 test: GYRO [˚/s]: X=0.793 Y=0.244 Z=-0.427[0m
+[0;32mI (4582) icm42670 test: ACCE [g]: X=0.010 Y=0.064 Z=1.020[0m
+[0;32mI (4582) icm42670 test: GYRO [˚/s]: X=0.732 Y=0.244 Z=-0.549[0m
+[0;32mI (4682) icm42670 test: ACCE [g]: X=0.011 Y=0.070 Z=1.016[0m
+[0;32mI (4682) icm42670 test: GYRO [˚/s]: X=0.732 Y=0.244 Z=-0.305[0m
+[0;32mI (4782) icm42670 test: ACCE [g]: X=0.011 Y=0.073 Z=1.013[0m
+[0;32mI (4782) icm42670 test: GYRO [˚/s]: X=0.610 Y=0.244 Z=-0.366[0m
+[0;32mI (4882) icm42670 test: ACCE [g]: X=0.013 Y=0.069 Z=1.015[0m
+[0;32mI (4882) icm42670 test: GYRO [˚/s]: X=0.732 Y=0.366 Z=-0.427[0m
+[0;32mI (4982) icm42670 test: ACCE [g]: X=0.009 Y=0.068 Z=1.017[0m
+[0;32mI (4982) icm42670 test: GYRO [˚/s]: X=0.610 Y=0.183 Z=0.244[0m
+[0;32mI (5082) icm42670 test: ACCE [g]: X=0.014 Y=0.063 Z=1.016[0m
+[0;32mI (5082) icm42670 test: GYRO [˚/s]: X=0.610 Y=0.305 Z=-0.671[0m

@@ -1,0 +1,41 @@
+Command: /Users/calvin/.espressif/python_env/idf5.5_py3.13_env/bin/python /Users/calvin/esp/esp-idf/tools/idf_monitor.py -p /dev/cu.usbmodem1101 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --decode-panic backtrace -m '/Users/calvin/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/Users/calvin/esp/esp-idf/tools/idf.py'
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4004c976
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x15b0
+load:0x25202975,len:0x45203a73
+Invalid image block, can't boot.
+ets_main.c 333 
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x7 (TG0WDT_SYS_RST),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40047ed2
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x15b0
+load:0x25202975,len:0x45203a73
+Invalid image block, can't boot.
+ets_main.c 333 
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x7 (TG0WDT_SYS_RST),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40047ed2
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x15b0
+load:0x25202975,len:0x45203a73
+Invalid image block, can't boot.
+ets_main.c 333 
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x7 (TG0WDT_SYS_RST),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40047ed2
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x15b0
+load:0x25202975,len:0x45203a73
+Invalid image block, can't boot.
+ets_main.c 333 

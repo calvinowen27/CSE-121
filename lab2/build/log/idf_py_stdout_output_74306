@@ -1,0 +1,2 @@
+Command: /Users/calvin/.espressif/python_env/idf5.5_py3.13_env/bin/python /Users/calvin/esp/esp-idf/tools/idf_monitor.py -p 4 -b 460800 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --decode-panic backtrace -m '/Users/calvin/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/Users/calvin/esp/esp-idf/tools/idf.py'
+[Errno 2] could not open port 4: [Errno 2] No such file or directory: '4'

@@ -1,0 +1,37 @@
+Command: ninja flash
+[0/1] Re-running CMake...
+-- Minimal build - ON
+-- git rev-parse returned 'fatal: not a git repository (or any of the parent directories): .git'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32c3
+NOTICE: Dependencies lock doesn't exist, solving dependencies.
+.......NOTICE: Updating lock file at /Users/calvin/esp/lab4_2/dependencies.lock
+NOTICE: Processing 4 dependencies:
+NOTICE: [1/4] espressif/ble_conn_mgr (0.1.3)
+NOTICE: [2/4] espressif/cmake_utilities (0.5.3)
+NOTICE: [3/4] espressif/esp_hosted (2.0.0)
+NOTICE: [4/4] idf (5.5.0)
+-- Project sdkconfig file /Users/calvin/esp/lab4_2/sdkconfig
+Loading defaults file /Users/calvin/esp/lab4_2/sdkconfig.defaults...
+warning: unknown kconfig symbol 'BTDM_CTRL_MODE_BTDM' assigned to 'y' in /Users/calvin/esp/lab4_2/sdkconfig.defaults
+Loading defaults file /Users/calvin/esp/lab4_2/sdkconfig.defaults.esp32c3...
+warning: unknown kconfig symbol 'BTDM_CTRL_MODE_BTDM' assigned to 'y' in /Users/calvin/esp/lab4_2/sdkconfig.defaults.esp32c3
+-- Adding linker script /Users/calvin/esp/esp-idf/components/riscv/ld/rom.api.ld
+-- USING O3
+-- App "lab4_2" version: 1
+-- Adding linker script /Users/calvin/esp/lab4_2/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /Users/calvin/esp/lab4_2/build/esp-idf/esp_system/ld/sections.ld.in
+-- Adding linker script /Users/calvin/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.ld
+-- Adding linker script /Users/calvin/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.api.ld
+-- Adding linker script /Users/calvin/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.bt_funcs.ld
+-- Adding linker script /Users/calvin/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.libgcc.ld
+-- Adding linker script /Users/calvin/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.version.ld
+-- Adding linker script /Users/calvin/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.eco3.ld
+-- Adding linker script /Users/calvin/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.eco3_bt_funcs.ld
+-- Adding linker script /Users/calvin/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.libc.ld
+-- Adding linker script /Users/calvin/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.libc-suboptimal_for_misaligned_mem.ld
+-- Adding linker script /Users/calvin/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.newlib.ld
+-- Adding linker script /Users/calvin/esp/esp-idf/components/soc/esp32c3/ld/esp32c3.peripherals.ld
+-- Configuring incomplete, errors occurred!
+FAILED: build.ninja /Users/calvin/esp/lab4_2/build/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/riscv/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/esp_driver_gpio/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/esp_timer/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/esp_pm/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/mbedtls/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/mbedtls/mbedtls/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/mbedtls/mbedtls/include/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/mbedtls/mbedtls/3rdparty/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/mbedtls/mbedtls/3rdparty/everest/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/mbedtls/mbedtls/3rdparty/p256-m/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/mbedtls/mbedtls/library/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/mbedtls/mbedtls/pkgconfig/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/bootloader/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/esptool_py/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/partition_table/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/esp_app_format/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/esp_bootloader_format/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/app_update/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/esp_partition/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/efuse/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/bootloader_support/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/esp_mm/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/spi_flash/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/esp_system/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/esp_system/port/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/esp_system/port/soc/esp32c3/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/esp_common/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/esp_rom/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/hal/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/heap/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/soc/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/esp_security/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/esp_hw_support/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/esp_hw_support/port/esp32c3/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/esp_hw_support/lowpower/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/freertos/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/newlib/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/newlib/src/port/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/pthread/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/cxx/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/log/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/esp_event/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/nvs_flash/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/esp_phy/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/esp_ringbuf/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/esp_driver_uart/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/esp_driver_usb_serial_jtag/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/esp_vfs_console/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/vfs/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/lwip/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/esp_netif_stack/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/esp_netif/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/wpa_supplicant/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/esp_coex/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/esp_wifi/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/esp_driver_spi/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/esp_gdbstub/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/bt/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/esp_hid/cmake_install.cmake /Users/calvin/esp/lab4_2/build/esp-idf/main/cmake_install.cmake 
+/opt/homebrew/bin/cmake --regenerate-during-build -S/Users/calvin/esp/lab4_2 -B/Users/calvin/esp/lab4_2/build

@@ -1,0 +1,2 @@
+source /Users/calvin/esp/lab3_2/build/bootloader/gdbinit/symbols
+source /Users/calvin/esp/lab3_2/build/bootloader/gdbinit/connect

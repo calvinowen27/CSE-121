@@ -1,0 +1,1 @@
+The GPIO2 led does not work, so I use the GPIO7 led instead.

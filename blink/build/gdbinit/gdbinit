@@ -1,0 +1,2 @@
+source /Users/calvin/esp/blink/build/gdbinit/symbols
+source /Users/calvin/esp/blink/build/gdbinit/connect

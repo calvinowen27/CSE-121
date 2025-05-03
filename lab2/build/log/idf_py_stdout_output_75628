@@ -1,0 +1,64 @@
+Command: /Users/calvin/.espressif/python_env/idf5.5_py3.13_env/bin/python /Users/calvin/esp/esp-idf/tools/idf_monitor.py -p /dev/cu.usbmodem1101 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --decode-panic backtrace -m '/Users/calvin/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/Users/calvin/esp/esp-idf/tools/idf.py'
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4004c97e
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x15b0
+load:0x403cbf10,len:0xc34
+load:0x403ce710,len:0x2fe8
+entry 0x403cbf1a
+[0;32mI (24) boot: ESP-IDF v5.5-dev-2916-g1c468f6825 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Apr 14 2025 13:18:10[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (26) boot: efuse block revision: v1.3[0m
+[0;32mI (30) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (34) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (45) boot: Partition Table:[0m
+[0;32mI (48) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (54) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (61) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (67) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (74) boot: End of partition table[0m
+[0;32mI (77) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=09be0h ( 39904) map[0m
+[0;32mI (91) esp_image: segment 1: paddr=00019c08 vaddr=3fc95400 size=00e8ch (  3724) load[0m
+[0;32mI (93) esp_image: segment 2: paddr=0001aa9c vaddr=40380000 size=0557ch ( 21884) load[0m
+[0;32mI (104) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1b370h (111472) map[0m
+[0;32mI (125) esp_image: segment 4: paddr=0003b398 vaddr=4038557c size=0fe40h ( 65088) load[0m
+[0;32mI (143) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (143) boot: Disabling RNG early entropy source...[0m
+[0;32mI (153) cpu_start: Pro cpu up.[0m
+[0;32mI (162) cpu_start: Pro cpu start user code[0m
+[0;32mI (162) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (162) cpu_start: Application information:[0m
+[0;32mI (165) cpu_start: Project name:     hello_world[0m
+[0;32mI (170) cpu_start: App version:      1[0m
+[0;32mI (175) cpu_start: Compile time:     Apr 10 2023 10:42:52[0m
+[0;32mI (181) cpu_start: ELF file SHA256:  e77f514337d625e1...[0m
+[0;32mI (187) cpu_start: ESP-IDF:          v5.1-dev-2668-g4c98bee8a4[0m
+[0;32mI (193) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (198) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (203) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (208) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (215) heap_init: At 3FC97120 len 000455F0 (277 KiB): DRAM[0m
+[0;32mI (221) heap_init: At 3FCDC710 len 00002950 (10 KiB): STACK/DRAM[0m
+[0;32mI (228) heap_init: At 50000020 len 00001FE0 (7 KiB): RTCRAM[0m
+[0;32mI (235) spi_flash: detected chip: generic[0m
+[0;32mI (239) spi_flash: flash io: dio[0m
+[0;32mI (243) app_start: Starting scheduler on CPU0[0m
+[0;32mI (248) main_task: Started on CPU0[0m
+[0;32mI (248) main_task: Calling app_main()[0m
+Hello world!
+This is esp32c3 chip with 1 CPU core(s), WiFi/BLE, silicon revision v0.4, 4MB external flash
+Minimum free heap size: 286984 bytes
+result of compute is 37
+result of compute is 37
+result of compute is 37
+result of compute is 37
+result of compute is 37
+result of compute is 37
+result of compute is 37
+result of compute is 37

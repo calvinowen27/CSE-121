@@ -1,0 +1,64 @@
+Command: /Users/calvin/.espressif/python_env/idf5.5_py3.13_env/bin/python /Users/calvin/esp/esp-idf/tools/idf_monitor.py -p /dev/cu.usbmodem1101 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --revision 3 --decode-panic backtrace /Users/calvin/esp/lab5_3/build/lab5_3.elf /Users/calvin/esp/lab5_3/build/bootloader/bootloader.elf -m '/Users/calvin/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/Users/calvin/esp/esp-idf/tools/idf.py'
+[0;32mI (219) heap_init: At 5000001C len 00001FCC (7ESP-ROM:esp32c3-api1-20210207[0m
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4004c0d6
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x15b0
+load:0x403cbf10,len:0xc34
+load:0x403ce710,len:0x2fe8
+entry 0x403cbf1a
+[0;32mI (24) boot: ESP-IDF v5.5-dev-2916-g1c468f6825-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time May 20 2025 11:43:06[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (27) boot: efuse block revision: v1.3[0m
+[0;32mI (30) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (34) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (46) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (55) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (61) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (68) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (74) boot: End of partition table[0m
+[0;32mI (78) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=07afch ( 31484) map[0m
+[0;32mI (90) esp_image: segment 1: paddr=00017b24 vaddr=3fc8ba00 size=01320h (  4896) load[0m
+[0;32mI (93) esp_image: segment 2: paddr=00018e4c vaddr=40380000 size=071cch ( 29132) load[0m
+[0;32mI (105) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=14f80h ( 85888) map[0m
+[0;32mI (121) esp_image: segment 4: paddr=00034fa8 vaddr=403871cc size=047e8h ( 18408) load[0m
+[0;32mI (125) esp_image: segment 5: paddr=00039798 vaddr=50000000 size=0001ch (    28) load[0m
+[0;32mI (129) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (130) boot: Disabling RNG early entropy source...[0m
+[0;32mI (146) cpu_start: Unicore app[0m
+[0;32mI (155) cpu_start: Pro cpu start user code[0m
+[0;32mI (155) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (155) app_init: Application information:[0m
+[0;32mI (155) app_init: Project name:     lab5_3[0m
+[0;32mI (159) app_init: App version:      46eeab5-dirty[0m
+[0;32mI (163) app_init: Compile time:     May 20 2025 11:43:00[0m
+[0;32mI (168) app_init: ELF file SHA256:  2f1321a09...[0m
+[0;32mI (173) app_init: ESP-IDF:          v5.5-dev-2916-g1c468f6825-dirty[0m
+[0;32mI (179) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (182) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (186) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (190) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (197) heap_init: At 3FC8E070 len 00031F90 (199 KiB): RAM[0m
+[0;32mI (202) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (208) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (214) heap_init: At 5000001C len 00001FCC (7 KiB): RTCRAM[0m
+[0;32mI (220) spi_flash: detected chip: generic[0m
+[0;32mI (223) spi_flash: flash io: dio[0m
+[0;33mW (226) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (238) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (244) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (251) main_task: Started on CPU0[0m
+[0;32mI (251) main_task: Calling app_main()[0m
+[0;32mI (251) ADC: calibration scheme version is Curve Fitting[0m
+[0;32mI (261) ADC: Calibration Success[0m
+[0;32mI (261) ADC: Started timers, time since boot: 46086 us[0m
+[0;32mI (1701) final msg:: ucsc cse 121 abcdefghijklm nopqrstuvwxyz 12345 67890[0m
+[0;32mI (1701) received data at: 188.205322 characters per second[0m
+[0;32mI (5151) final msg:: ucsc cse 121 abcdefghijklm nopqrstuvwxyz 12345 67890[0m
+[0;32mI (5151) received data at: 188.207352 characters per second[0m

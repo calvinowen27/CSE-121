@@ -1,0 +1,205 @@
+Command: /Users/calvin/.espressif/python_env/idf5.5_py3.13_env/bin/python /Users/calvin/esp/esp-idf/tools/idf_monitor.py -p /dev/cu.usbmodem1101 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --revision 3 --decode-panic backtrace /Users/calvin/esp/lab6_1/build/lab6_1.elf /Users/calvin/esp/lab6_1/build/bootloader/bootloader.elf -m '/Users/calvin/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/Users/calvin/esp/esp-idf/tools/idf.py'
+ge header.
+[0;32mI (247) sleep_gpio: ConfESP-ROM:esp32c3-api1-20210207[0m
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4004c0d4
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x15b0
+load:0x403cbf10,len:0xc34
+load:0x403ce710,len:0x2fe8
+entry 0x403cbf1a
+[0;32mI (24) boot: ESP-IDF v5.5-dev-2916-g1c468f6825-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time May 21 2025 15:00:01[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (27) boot: efuse block revision: v1.3[0m
+[0;32mI (30) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (34) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (46) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (55) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (61) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (68) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (74) boot: End of partition table[0m
+[0;32mI (78) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0a408h ( 41992) map[0m
+[0;32mI (92) esp_image: segment 1: paddr=0001a430 vaddr=3fc8c800 size=012c0h (  4800) load[0m
+[0;32mI (93) esp_image: segment 2: paddr=0001b6f8 vaddr=40380000 size=04920h ( 18720) load[0m
+[0;32mI (103) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1adb8h (110008) map[0m
+[0;32mI (125) esp_image: segment 4: paddr=0003ade0 vaddr=40384920 size=07d58h ( 32088) load[0m
+[0;32mI (131) esp_image: segment 5: paddr=00042b40 vaddr=50000000 size=0001ch (    28) load[0m
+[0;32mI (135) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (136) boot: Disabling RNG early entropy source...[0m
+[0;32mI (150) cpu_start: Unicore app[0m
+[0;32mI (159) cpu_start: Pro cpu start user code[0m
+[0;32mI (159) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (159) app_init: Application information:[0m
+[0;32mI (159) app_init: Project name:     lab6_1[0m
+[0;32mI (163) app_init: App version:      46eeab5-dirty[0m
+[0;32mI (167) app_init: Compile time:     May 21 2025 14:59:55[0m
+[0;32mI (172) app_init: ELF file SHA256:  50a81ff12...[0m
+[0;32mI (176) app_init: ESP-IDF:          v5.5-dev-2916-g1c468f6825-dirty[0m
+[0;32mI (182) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (186) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (190) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (194) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (200) heap_init: At 3FC8E9D0 len 00031630 (197 KiB): RAM[0m
+[0;32mI (206) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (212) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (218) heap_init: At 5000001C len 00001FCC (7 KiB): RTCRAM[0m
+[0;32mI (224) spi_flash: detected chip: generic[0m
+[0;32mI (227) spi_flash: flash io: dio[0m
+[0;33mW (230) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (242) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (248) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (255) main_task: Started on CPU0[0m
+[0;32mI (255) main_task: Calling app_main()[0m
+[0;32mI (255) Range Finder: I2C initialized successfully[0m
+[0;32mI (535) Distance: 27.7 cm at 23C[0m
+[0;32mI (1525) Distance: 29.4 cm at 23C[0m
+[0;32mI (2515) Distance: 3.3 cm at 23C[0m
+[0;32mI (3505) Distance: 3.3 cm at 23C[0m
+[0;32mI (4495) Distance: 3.3 cm at 23C[0m
+[0;32mI (5485) Distance: 3.3 cm at 23C[0m
+[0;32mI (6475) Distance: 5.1 cm at 23C[0m
+[0;32mI (7465) Distance: 5.1 cm at 23C[0m
+[0;32mI (8455) Distance: 5.1 cm at 23C[0m
+[0;32mI (9445) Distance: 5.1 cm at 23C[0m
+[0;32mI (10435) Distance: 5.1 cm at 23C[0m
+[0;32mI (11425) Distance: 10.4 cm at 23C[0m
+[0;32mI (12415) Distance: 9.3 cm at 23C[0m
+[0;32mI (13405) Distance: 9.3 cm at 23C[0m
+[0;32mI (14395) Distance: 9.3 cm at 24C[0m
+[0;32mI (15385) Distance: 7.2 cm at 23C[0m
+[0;32mI (16375) Distance: 3.9 cm at 23C[0m
+[0;32mI (17365) Distance: 3.9 cm at 24C[0m
+[0;32mI (18355) Distance: 3.7 cm at 23C[0m
+[0;32mI (19345) Distance: 5.1 cm at 24C[0m
+[0;32mI (20335) Distance: 5.1 cm at 24C[0m
+[0;32mI (21325) Distance: 5.1 cm at 23C[0m
+[0;32mI (22315) Distance: 5.1 cm at 24C[0m
+[0;32mI (23305) Distance: 5.1 cm at 24C[0m
+[0;32mI (24295) Distance: 5.1 cm at 24C[0m
+[0;32mI (25285) Distance: 4.5 cm at 24C[0m
+[0;32mI (26275) Distance: 4.5 cm at 24C[0m
+[0;32mI (27265) Distance: 3.9 cm at 24C[0m
+[0;32mI (28255) Distance: 3.9 cm at 24C[0m
+[0;32mI (29245) Distance: 4.7 cm at 24C[0m
+[0;32mI (30235) Distance: 12.8 cm at 24C[0m
+[0;32mI (31225) Distance: 12.8 cm at 24C[0m
+[0;32mI (32215) Distance: 12.8 cm at 24C[0m
+[0;32mI (33205) Distance: 12.8 cm at 24C[0m
+[0;32mI (34195) Distance: 12.8 cm at 24C[0m
+[0;32mI (35185) Distance: 21.5 cm at 24C[0m
+[0;32mI (36175) Distance: 25.6 cm at 24C[0m
+[0;32mI (37165) Distance: 28.9 cm at 24C[0m
+[0;32mI (38155) Distance: 30.0 cm at 24C[0m
+[0;32mI (39145) Distance: 29.5 cm at 24C[0m
+[0;32mI (40135) Distance: 29.5 cm at 24C[0m
+[0;32mI (41125) Distance: 30.9 cm at 24C[0m
+[0;32mI (42115) Distance: 49.7 cm at 24C[0m
+[0;32mI (43105) Distance: 47.9 cm at 24C[0m
+[0;32mI (44095) Distance: 48.4 cm at 24C[0m
+[0;32mI (45085) Distance: 102.9 cm at 24C[0m
+[0;32mI (46075) Distance: 104.1 cm at 24C[0m
+[1;31mE (47045) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (47045) i2c.master: s_i2c_synchronous_transaction(935): I2C transaction failed[0m
+[1;31mE (47045) i2c.master: i2c_master_multi_buffer_transmit(1204): I2C transaction failed[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x103 (ESP_ERR_INVALID_STATE) at 0x42009b98
+file: "./main/main.c" line 166
+func: get_tempC
+expression: shtc3_send_cmd(dev_handle, SHTC3_WAKEUP_CMD)
+
+abort() was called at PC 0x40383e25 on core 0
+Core  0 register dump:
+MEPC    : 0x403807b0  RA      : 0x40383e30  SP      : 0x3fc914c0  GP      : 0x3fc8d000  
+TP      : 0x3fc91630  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000004  S1      : 0x3fc91524  A0      : 0x3fc914ec  A1      : 0x3fc91522  
+A2      : 0x00000000  A3      : 0x3fc91519  A4      : 0x00000001  A5      : 0x3fc8f000  
+A6      : 0x7a797877  A7      : 0x76757473  S2      : 0x00000000  S3      : 0x00000000  
+S4      : 0x405a066e  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+add symbol table from file "/Users/calvin/esp/lab6_1/build/bootloader/bootloader.elf"
+panic_abort (details=details@entry=0x3fc914ec "abort() was called at PC 0x40383e25 on core 0") at /Users/calvin/esp/esp-idf/components/esp_system/panic.c:482
+482	    asm("unimp");   // should be an invalid operation on RISC-V targets
+#0  panic_abort (details=details@entry=0x3fc914ec "abort() was called at PC 0x40383e25 on core 0") at /Users/calvin/esp/esp-idf/components/esp_system/panic.c:482
+#1  0x40383e30 in esp_system_abort (details=details@entry=0x3fc914ec "abort() was called at PC 0x40383e25 on core 0") at /Users/calvin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+#2  0x4038a912 in abort () at /Users/calvin/esp/esp-idf/components/newlib/src/abort.c:38
+#3  0x40383e28 in _esp_error_check_failed (rc=<optimized out>, file=file@entry=0x3c024b60 "", line=line@entry=166, function=function@entry=0x3c028c40 <__func__.3> "", expression=expression@entry=0x3c024bdc "") at /Users/calvin/esp/esp-idf/components/esp_system/esp_err.c:49
+#4  0x42009b9c in get_tempC () at /Users/calvin/esp/lab6_1/main/main.c:166
+#5  0x42009cd6 in run () at /Users/calvin/esp/lab6_1/main/main.c:198
+#6  0x42009e42 in app_main () at /Users/calvin/esp/lab6_1/main/main.c:249
+#7  0x4201a36a in main_task (args=<error reading variable: value has been optimized out>) at /Users/calvin/esp/esp-idf/components/freertos/app_startup.c:208
+#8  0x40384db8 in vPortTaskWrapper (pxCode=<optimized out>, pvParameters=<optimized out>) at /Users/calvin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:255
+
+
+
+ELF file SHA256: 50a81ff12
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40380768
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x15b0
+load:0x403cbf10,len:0xc34
+load:0x403ce710,len:0x2fe8
+entry 0x403cbf1a
+[0;32mI (24) boot: ESP-IDF v5.5-dev-2916-g1c468f6825-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time May 21 2025 15:00:01[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (26) boot: efuse block revision: v1.3[0m
+[0;32mI (30) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (34) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (45) boot: Partition Table:[0m
+[0;32mI (48) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (54) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (61) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (67) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (74) boot: End of partition table[0m
+[0;32mI (77) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0a408h ( 41992) map[0m
+[0;32mI (91) esp_image: segment 1: paddr=0001a430 vaddr=3fc8c800 size=012c0h (  4800) load[0m
+[0;32mI (93) esp_image: segment 2: paddr=0001b6f8 vaddr=40380000 size=04920h ( 18720) load[0m
+[0;32mI (103) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1adb8h (110008) map[0m
+[0;32mI (125) esp_image: segment 4: paddr=0003ade0 vaddr=40384920 size=07d58h ( 32088) load[0m
+[0;32mI (131) esp_image: segment 5: paddr=00042b40 vaddr=50000000 size=0001ch (    28) load[0m
+[0;32mI (135) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (135) boot: Disabling RNG early entropy source...[0m
+[0;32mI (149) cpu_start: Unicore app[0m
+[0;32mI (158) cpu_start: Pro cpu start user code[0m
+[0;32mI (158) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (158) app_init: Application information:[0m
+[0;32mI (158) app_init: Project name:     lab6_1[0m
+[0;32mI (162) app_init: App version:      46eeab5-dirty[0m
+[0;32mI (167) app_init: Compile time:     May 21 2025 14:59:55[0m
+[0;32mI (172) app_init: ELF file SHA256:  50a81ff12...[0m
+[0;32mI (176) app_init: ESP-IDF:          v5.5-dev-2916-g1c468f6825-dirty[0m
+[0;32mI (182) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (186) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (190) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (194) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (200) heap_init: At 3FC8E9D0 len 00031630 (197 KiB): RAM[0m
+[0;32mI (205) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (211) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (217) heap_init: At 5000001C len 00001FCC (7 KiB): RTCRAM[0m
+[0;32mI (223) spi_flash: detected chip: generic[0m
+[0;32mI (226) spi_flash: flash io: dio[0m
+[0;33mW (229) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (241) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (247) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (254) main_task: Started on CPU0[0m
+[0;32mI (254) main_task: Calling app_main()[0m
+[0;32mI (254) Range Finder: I2C initialized successfully[0m
+[0;32mI (534) Distance: 11.6 cm at 24C[0m
+[0;32mI (1524) Distance: 11.6 cm at 24C[0m
+[0;32mI (2514) Distance: 11.6 cm at 24C[0m

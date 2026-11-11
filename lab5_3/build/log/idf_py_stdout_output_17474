@@ -1,0 +1,62 @@
+Command: ninja flash
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /Users/calvin/esp/lab5_3/build/bootloader/esp-idf/esptool_py && /Users/calvin/.espressif/python_env/idf5.5_py3.13_env/bin/python /Users/calvin/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /Users/calvin/esp/lab5_3/build/bootloader/bootloader.bin
+Bootloader binary size 0x5220 bytes. 0x2de0 bytes (36%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+/Users/calvin/esp/lab5_3/main/main.c: In function 'periodic_timer_callback':
+/Users/calvin/esp/lab5_3/main/main.c:232:10: warning: variable 'c' set but not used [-Wunused-but-set-variable]
+  232 |     char c[7] = { 0 };
+      |          ^
+[5/10] Linking C static library esp-idf/main/libmain.a
+[6/10] Generating ld/sections.ld
+[7/10] Linking CXX executable lab5_3.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.9.dev6
+Creating esp32c3 image...
+Merged 1 ELF section
+Successfully created esp32c3 image.
+Generated /Users/calvin/esp/lab5_3/build/lab5_3.bin
+[9/10] cd /Users/calvin/esp/lab5_3/build/esp-idf/esptool_py && /Users/calvin/.espressif/python_env/idf5.5_py3.13_env/bin/python /Users/calvin/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/calvin/esp/lab5_3/build/partition_table/partition-table.bin /Users/calvin/esp/lab5_3/build/lab5_3.bin
+lab5_3.bin binary size 0x297e0 bytes. Smallest app partition is 0x100000 bytes. 0xd6820 bytes (84%) free.
+[9/10] cd /Users/calvin/esp/esp-idf/components/esptool_py && /opt/homebrew/bin/cmake -D IDF_PATH=/Users/calvin/esp/esp-idf -D "SERIAL_TOOL=/Users/calvin/.espressif/python_env/idf5.5_py3.13_env/bin/python;;/Users/calvin/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32c3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/Users/calvin/esp/lab5_3/build -P /Users/calvin/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32c3 -p /dev/cu.usbmodem1101 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 lab5_3.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.9.dev6
+Serial port /dev/cu.usbmodem1101
+Connecting...
+Chip is ESP32-C3 (QFN32) (revision v0.4)
+Features: WiFi, BLE, Embedded Flash 4MB (XMC)
+Crystal is 40MHz
+USB mode: USB-Serial/JTAG
+MAC: 40:4c:ca:8b:bf:b4
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x00039fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 21024 bytes to 13225...
+Writing at 0x00000000... (100 %)
+Wrote 21024 bytes (13225 compressed) at 0x00000000 in 0.4 seconds (effective 471.1 kbit/s)...
+Hash of data verified.
+Compressed 169952 bytes to 90498...
+Writing at 0x00010000... (16 %)
+Writing at 0x00019e32... (33 %)
+Writing at 0x000207f7... (50 %)
+Writing at 0x000275f5... (66 %)
+Writing at 0x0002e60d... (83 %)
+Writing at 0x0003579a... (100 %)
+Wrote 169952 bytes (90498 compressed) at 0x00010000 in 1.5 seconds (effective 927.5 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 431.2 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
